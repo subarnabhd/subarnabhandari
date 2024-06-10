@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "/style/globals.css";
 import { Providers } from "./providers";
+import Navbar from "@/components/header/Navbar";
+import Footer from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Vhandar | Everything delivered in minutes",
-  description: "Grocery App",
+  title: "Subarna Bhandari",
+  description: "Designer",
 };
 
 export default function RootLayout({
@@ -19,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
+        <Navbar/>
         {children}
+        <Footer/>
         </Providers>
       </body>
     </html>

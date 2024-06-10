@@ -1,10 +1,10 @@
-import Comingsoon from "@/components/Comingsoon";
+import Socialmedia from "@/components/footer/Socialmedia";
 
 
 export default function page() {
   return (
     <main>
-      <Comingsoon />
+      <Socialmedia />
     </main>
   );
 }

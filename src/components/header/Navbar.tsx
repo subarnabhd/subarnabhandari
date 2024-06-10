@@ -4,14 +4,15 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="v-header sticky top-0 h-[90px] bg-primary-600 flex justify-between  align-middle items-center text-white">
+    <div className="s-header sticky top-0 h-[64px] flex items-center">
+      <div className="container flex m-auto items-center justify-between">
       
       <div className="flex flex-wrap items-center justify-between">
         <Link
-          className="v-logo px-5 h-[86px] align-middle text-center flex"
+          className=" h-[25px] align-middle text-center flex"
           href="/"
         >
-          <Image src="/vhandar-logo.svg" width={190} height={100} alt="" />
+          <Image src="/logo.svg" width={190} height={100} alt="" />
         </Link>
       </div>
 
@@ -63,21 +64,14 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="flex gap-5  justify-center  items-center  max-w-md px-4 ">
-      
-
-          <Link
-            className="w-[190px] h-[55px] px-3 py-[4px] rounded-lg text-l font-semibold  hover-bg-secondary-500  text-center flex gap-2 "
-            href="tel:+9779851357358"
-          >
-            <Image src="/icon/support.svg" width={36} height={24} alt="" />
-            <div className="text-left gap-0 flex flex-col">
-            <p className="text-lg font-bold tracking-wide mb-[-2px]">9851357358</p>
-            <p className="text-xs font-normal">24/7 Support Center</p>
-            </div>
-
-
-          </Link>
+      <div className="flex flex-wrap items-center justify-between">
+        <Link
+          className=" h-[25px] align-middle text-center flex"
+          href="/"
+        >
+          <Image src="/menu.svg" width={190} height={100} alt="" />
+        </Link>
+      </div>
         </div>
                 
     </div>
