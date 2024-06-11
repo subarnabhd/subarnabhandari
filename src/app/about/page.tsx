@@ -2,6 +2,7 @@ import About from '@/components/About'
 import Blogcard from '@/components/Blogcard'
 import Downloadapp from '@/components/Downloadapp'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
@@ -9,7 +10,7 @@ const page = () => {
     <main className='bg-black'>
 
 
-    <div className="container flex flex-col m-auto bg-neutral-4 rounded-2xl py-5 gap-4">
+    <div className="container flex flex-col m-auto bg-neutral-4 rounded-2xl py-5 gap-10 pb-20">
         <Image
           className="m-auto w-full rounded-xl"
           src="/about/about-header.jpg"
@@ -27,7 +28,13 @@ const page = () => {
        <p className=" text-base mb-4 color-white90">When I’m not glued to the computer, I like to spend time watching movies, painting. I am also an adrenaline junkie and love all sports above and below ground level – doesn’t mean I’m necessarily good at them all!</p>
         <p className='text-bold'>Creating the Brand, that people <b>Love.</b></p>
         </div>
+        <div className="flex gap-5">
+          <Link className="primary-btn" href="/contact">Let‘s Connect</Link>
+
+          <Link className="border-btn" href="/cv">View Resume</Link>
+        </div>
     </div>
+
 
   </main>
   )

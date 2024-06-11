@@ -317,3 +317,75 @@ b{
   background: var(--white15)!important;
   border: 1px solid var(--white25) !important;
 }
+
+
+
+/* ---------Button------------ */
+
+.primary-btn{
+  color: var(--white100);
+  padding: 16px 24px;
+  background-color: var(--primary-hover);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 15px;
+  border: none;
+  line-height: 24px;
+
+}
+.primary-btn:hover{
+  background-color: var(--primary);
+  box-shadow: 14px 13px 40px 13px rgb(133 0 0 / 33%);
+}
+.primary-btn:active{
+  background-color: var(--primary-click);
+}
+
+
+.primary-sm-btn {
+  color: var(--white100);
+  border: none;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: var(--primary-hover);
+  padding: 8px 16px;
+  letter-spacing: 0;
+  font-weight: 400;
+  text-decoration: none;
+  margin: 0px 0px;
+  text-decoration: none;
+}
+.primary-sm-btn:hover {
+  background-color: var(--primary);
+  color: var(--white100);
+  text-decoration: none;
+  box-shadow: 14px 13px 40px 13px rgb(133 0 0 / 33%);
+}
+.primary-sm-btn:active{
+  background-color: var(--primary-click);
+}
+
+
+.border-btn{
+  color: var(--white100);
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 15px;
+  border: 2px solid var(--white40);
+  line-height: 24px;
+
+
+}
+.border-btn:hover{
+  background-color: var(--white90);
+
+}
+.border-btn:active{
+color: var(--black100);
+  background-color: var(--white100);
+}
+
+
+
+/* ---------Button------------ */
