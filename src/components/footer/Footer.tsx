@@ -19,30 +19,30 @@ function Footer() {
         </div>
         <div className="flex justify-between">
         <div className="flex justify-between">
-            <p className="font-normal text-[14px] hover-white20 color-white90">
+            <p className="font-normal text-[14px] color-white90">
               Need more help?{" "}
-              <Link href="https://wa.me/9779844740360">Chat on Whatsapp</Link>
-              <Link href="tel:+977-9844740360">+977-9844740360</Link>
+              <Link className="color-white100 hover-color-red100  " href="https://wa.me/9779844740360">Chat on Whatsapp</Link> &nbsp;or call &nbsp;
+              <Link className="color-white100 hover-color-red100 " href="tel:+977-9844740360">+977-9844740360</Link>
             </p>
           </div>
           <Socialmedia />
         </div>
         <div className="flex justify-between">
-          <p className="font-normal text-xs uppercase">
-            EMAIL US :<Link href="mailto:hello@subarnabhandari.com" className="hover-red100">
+          <p className="font-normal text-xs uppercase color-white95">
+            EMAIL US :<Link className="color-white100 hover-color-red100" href="mailto:hello@subarnabhandari.com">
             &nbsp;hello@subarnabhandari.com
             </Link>
           </p>
           <ul>
-            <li className="flex gap-4 font-normal text-xs hover-white20">
-              <Link href="/home">Home</Link>
-              <Link href="/about">About</Link>
-              <Link href="/studio">Studio<b>.</b></Link> 
-              <Link href="/portfolio">Portfolio</Link>
-              <Link href="/blog">Blog</Link>
-              <Link href="/link">Link</Link>
-              <Link href="/tools">Tools</Link>
-              <Link href="/contact">Contact</Link>
+            <li className="flex gap-4 font-normal text-xs ">
+              <Link className="color-white95 hover-color-white100" href="/home">Home</Link>
+              <Link className="color-white95 hover-color-white100"  href="/about">About</Link>
+              <Link className="color-white95 hover-color-white100"  href="/studio">Studio<b>.</b></Link> 
+              <Link className="color-white95 hover-color-white100" href="/portfolio">Portfolio</Link>
+              <Link className="color-white95 hover-color-white100"  href="/blog">Blog</Link>
+              <Link className="color-white95 hover-color-white100"  href="/link">Link</Link>
+              <Link className="color-white95 hover-color-white100"  href="/tools">Tools</Link>
+              <Link className="color-white95 hover-color-white100"  href="/contact">Contact</Link>
             </li>
           </ul>
         </div>

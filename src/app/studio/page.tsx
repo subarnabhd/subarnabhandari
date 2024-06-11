@@ -1,3 +1,4 @@
+import Aboutstudio from "@/components/studio/Aboutstudio";
 import Studiobanner from "@/components/studio/Studiobanner";
 import Image from "next/image";
 import React from "react";
@@ -7,7 +8,8 @@ const page = () => {
     <main>
       <Studiobanner />
 
-      <div className=" color-black100 flex flex-col items-center justify-center text-6xl font-bold gap-5  py-[200px]">
+
+      <div id="aboutstudio" className=" color-black100 flex flex-col items-center justify-center text-6xl font-bold gap-5  py-[200px]">
         <h1 className="flex text-gray-400">
           <p className="text-black">Studio</p>
           <b>.</b>Creating the brands
@@ -16,11 +18,13 @@ const page = () => {
           that people <b>Love.</b>
         </h1>
       </div>
+      <Aboutstudio />
 
       <div className="bg-black  py-20 flex flex-col gap-5">
-        <div className="container m-auto">
+        <div className="container m-auto flex flex-col gap-5 ">
+          <div>
           <h2 className="site-h">Services We Provide</h2>
-          <p className="site-p">Transform your business idea with us</p>
+          <p className="site-p">Transform your business idea with us</p></div>
 
 
 

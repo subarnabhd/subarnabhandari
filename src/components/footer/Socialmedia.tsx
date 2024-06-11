@@ -8,9 +8,9 @@ import Link from "next/link";
 
 const Socialmedia = () => {
   return (
-    <div aria-label="Social media links" className="flex row gap-3 w-min color-white95">
+    <div aria-label="Social media links" className="flex row gap-3 w-min">
       <Link
-        className="p-3 text-l"
+        className="p-3 text-l  color-white95 hover-color-white100 hover-bg-white20"
         href="https://www.facebook.com/subarnabhd"
         target="_blank"
         rel="noopener noreferrer"
@@ -21,7 +21,7 @@ const Socialmedia = () => {
         <span className="sr-only">Facebook</span>
       </Link>
       <Link
-            className="p-3 text-l"
+            className="p-3 text-l  color-white95 hover-color-white100 hover-bg-white20"
         href="https://www.instagram.com/subarnabhd"
         target="_blank"
         rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const Socialmedia = () => {
         <span className="sr-only">Instagram</span>
       </Link>
       <Link
-        className="p-3 text-l"
+        className="p-3 text-l  color-white95 hover-color-white100 hover-bg-white20"
         href="https://www.tiktok.com/@subarnabhd"
         target="_blank"
         rel="noopener noreferrer"
@@ -43,7 +43,7 @@ const Socialmedia = () => {
         <span className="sr-only">TikTok</span>
       </Link>
       <Link
-        className="p-3 text-l"
+        className="p-3 text-l  color-white95 hover-color-white100 hover-bg-white20"
         href="https://linkedin.com/company/subarnabhd"
         target="_blank"
         rel="noopener noreferrer"
@@ -54,7 +54,7 @@ const Socialmedia = () => {
         <span className="sr-only">LinkedIn</span>
       </Link>
       <Link
-        className="p-3 text-l"
+        className="p-3 text-l  color-white95 hover-color-white100 hover-bg-white20"
         href="mailto:subarnabhd@gmail.com"
         target="_blank"
         rel="noopener noreferrer"

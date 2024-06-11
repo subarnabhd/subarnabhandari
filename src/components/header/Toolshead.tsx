@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const header = () => {
+const toolshead = () => {
   return (
-    <div className="s-header  sticky  top-0 h-[64px] flex items-center">
+    <div className="s-header sticky top-0 h-[64px] flex items-center">
       <div className="container flex m-auto items-center justify-between">
         <div className="flex flex-wrap items-center justify-between">
           <Link className=" h-[25px] align-middle text-center flex" href="/">
@@ -70,4 +70,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default toolshead;

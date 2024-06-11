@@ -12,7 +12,7 @@ const Copywrite = () => {
       <div className="flex items-center align-middle  w-full">
         Copyright © {new Date().getFullYear()},
         <a
-          className=" "
+          className=" hover-color-white100"
           target="_blank"
           rel="noopener noreferrer"
           href="https://subarnabhandari.com/"
