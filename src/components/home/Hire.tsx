@@ -4,7 +4,7 @@ import React from 'react'
 
 const Hire = () => {
     return (
-        <div className="py-[200px]">
+        <div className="py-[200px] w-header">
             <div className=" container m-auto bg-[#F5F5F7] rounded-2xl flex  ">
                 <div className='p-20 w-1/2  text-black  items-center flex flex-col'>
                     <div className="flex flex-col color-black-60 text-lg text-center items-center">

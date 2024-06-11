@@ -11,11 +11,11 @@ const page = () => {
     <main>
       
     <Homebanner/>
-    <div className="text-6xl text-center bg-[#F5F5F7] p-20 font-extrabold">
+    <div className="text-6xl text-center bg-[#F5F5F7] p-20 font-extrabold w-header">
       <Link className="color-black20 hover-color-black40" href="mailto:hello@subarnabhandari.com"> hello@subarnabhandari.com</Link>
     </div>
   
-    <div className="text-center bg-[#F5F5F7] p-5 ">
+    <div className="text-center bg-[#F5F5F7] p-5 w-header">
       
       <div className="bg-white  p-20 rounded-t-3xl">
       <h2 className="site-h text-black">Striving to create elegant & effortless designs.</h2>

@@ -1,27 +1,67 @@
+ "use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 
-const header = () => {
+const Header = () => {
+  useEffect(() => {
+    const navigation = document.querySelector(".s-header") as HTMLElement | null;
+    const darkSections = document.querySelectorAll('.w-header') as NodeListOf<HTMLElement>;
+
+    if (!navigation) return;
+
+    const headerDarkMode = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      let isOverAnyDarkSection = false;
+
+      darkSections.forEach((darkSection) => {
+        const top = darkSection.offsetTop;
+        const height = darkSection.offsetHeight;
+        const bottom = top + height;
+        if (scrollTop >= top - 20 && scrollTop < bottom - 20) {
+          isOverAnyDarkSection = true;
+        }
+      });
+
+      if (scrollTop <= 45 || isOverAnyDarkSection) {
+        navigation.classList.add('minimal');
+      } else {
+        navigation.classList.remove('minimal');
+      }
+    };
+
+    const handleScroll = () => {
+      if (navigation) {
+        headerDarkMode();
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="s-header  sticky  top-0 h-[64px] flex items-center">
+    <div className="s-header">
       <div className="container flex m-auto items-center justify-between">
         <Link
-          className=" h-[25px] text-center flex w-max justify-start"
+          className="s-header-logo"
           href="/"
         >
-          <Image src="/logo.svg" width={190} height={100} alt="" />
         </Link>
 
         <div
           className="hidden w-full md:block md:w-auto px-10"
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4  md:p-0 mt-4 border  rounded-lg md:flex-row md:space-x rtl:space-x-reverse md:mt-0 md:border-0">
+          <ul className="s-header-nav font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x rtl:space-x-reverse md:mt-0 md:border-0">
             <li>
               <Link
                 href="/"
-                className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
+                 className="s-header-link"
               >
                 Home
               </Link>
@@ -29,7 +69,7 @@ const header = () => {
             <li>
               <Link
                 href="/about"
-                className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
+    className="s-header-link"
               >
                 About
               </Link>
@@ -37,7 +77,7 @@ const header = () => {
             <li>
               <Link
                 href="/studio"
-                className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
+                className="s-header-link"
               >
                 Studio<b>.</b>
               </Link>
@@ -45,7 +85,7 @@ const header = () => {
             <li>
               <Link
                 href="/portfolio"
-                className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
+            className="s-header-link"
               >
                 Portfolio
               </Link>
@@ -53,7 +93,7 @@ const header = () => {
             <li>
               <Link
                 href="/contact"
-                className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
+                  className="s-header-link"
               >
                 Contact
               </Link>
@@ -61,12 +101,12 @@ const header = () => {
           </ul>
         </div>
 
-        <Link className=" h-[25px] align-middle text-center flex" href="/">
-          <Image src="/menu.svg" width={190} height={100} alt="" />
+        <Link className="s-header-menu" href="/">
+         
         </Link>
       </div>
     </div>
   );
 };
 
-export default header;
+export default Header;
