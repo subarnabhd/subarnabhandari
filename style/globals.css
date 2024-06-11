@@ -121,6 +121,26 @@ body {
   --red5: #ff000005;
 }
 
+.bg-primary{
+  background-color: var(--primary);
+}
+.color-primary{
+  color: var(--primary);
+}
+.hover-bg-primary{
+  background-color: var(--primary-hover);
+}
+.hover-color-primary{
+color: var(--primary-hover);
+}
+.hover-bg-click-primary{
+  background-color: var(--primary-click);
+}
+.hover-click-primary{
+color: var(--primary-click);
+}
+
+
 /* Background color classes */
 .bg-black100 { background-color: var(--black100); }
 .bg-black95 { background-color: var(--black95); }
@@ -250,18 +270,50 @@ body {
 .color-red5 { color: var(--red5); }
 
 
-
+/* ------------- */
 .s-header{
   min-height: 64px;
   backdrop-filter: blur(15px) !important;
-  background: var(--bg-white) !important;
+  background: var(--bg-black) !important;
   -webkit-backdrop-filter: blur(15px) !important;
   border-bottom: 1px solid rgba(121, 121, 121, 0.1) !important;
 }
 main{
-  min-height: calc(100vh - 520px);
+  /* min-height: calc(100vh - 520px); */
   background-color: white;
 }
 b{
-  color:var(--red100);
+  color:var(--primary);
+}
+.site-h{
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+}
+.site-p{
+  font-size: 18px;
+  color: var(--white85);
+  margin: auto;
+  max-width: 800px;
+  text-align: center;
+  font-weight: 400;
+
+}
+
+.site-box {
+  color: var(--white100);
+  border-radius: 6px;
+  background: var(--black25) !important;
+  border: 1px solid var(--white20) !important;
+  text-align: center;
+  align-items: center;
+  cursor: hand;
+  -webkit-backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(20px) !important;
+  margin: auto;
+}
+
+.site-box:hover {
+  background: var(--white15)!important;
+  border: 1px solid var(--white25) !important;
 }

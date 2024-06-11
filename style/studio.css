@@ -1,0 +1,57 @@
+:root {
+  --ps: #001126;
+  --ai: #240000;
+  --id: #400012;
+  --pr: #00004a;
+  --ae: #00004a;
+  --lr: #001126;
+  --figma: #272727;
+  --sketch: #011a2e;
+  --xd: #360027;
+}
+
+.studio-banner {
+  background-image: url(/studio/studiobanner.webp);
+  background-position: bottom center;
+  background-size: cover;
+}
+.app-ico img {
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  width: 80px;
+  padding: 20px;
+  border: 1px solid var(--white20);
+  border-radius: 18px;
+}
+.app-ico img:hover {
+  border: none;
+  transform: scale(1.1) rotate(6deg);
+  transition: transform 0.3s, width 0.3s, height 0.3s;
+}
+.app-ico .ps:hover {
+  background-color: var(--ps);
+  transform: scale(1.1) rotate(10deg);
+  transition: transform 0.3s, width 0.3s, height 0.3s;
+}
+.app-ico .ai:hover {
+  background-color: var(--ai);
+}
+.app-ico .id:hover {
+  background-color: var(--id);
+}
+.app-ico .pr:hover {
+  background-color: var(--pr);
+}
+.app-ico .ae:hover {
+  background-color: var(--ae);
+}
+.app-ico .xd:hover {
+  background-color: var(--xd);
+}
+.app-ico .figma:hover {
+  background-color: var(--figma);
+}
+.app-ico .sketch:hover {
+  background-color: var(--sketch);
+}
