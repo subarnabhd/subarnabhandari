@@ -8,8 +8,8 @@ function Footer() {
   return (
     <div className="s-footer pt-20 pb-7 border-t border-gray-900 ">
       <div className="container m-auto flex flex-col gap-5 ">
-        <div className="flex gap-5 color-white90">
-          <Image src="/logo.svg" width={50} height={100} alt="" />
+        <div className="flex gap-5 color-white90 pb-10 border-b border-gray-900 items-center">
+          <Link href="/" className="p-4 bg-white20 hover-bg-white25"><Image src="/logo.svg" width={40} height={100} alt="" /></Link>
           <p className="text-base">
             I'm the design maestro that turns businesses into market stars.
             Whether it's web, graphic, or UI/UX, I specialize in creating
@@ -17,8 +17,8 @@ function Footer() {
             business the next big sensation!
           </p>
         </div>
-        <div className="flex justify-between">
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center">
             <p className="font-normal text-[14px] color-white90">
               Need more help?{" "}
               <Link className="color-white100 hover-color-red100  " href="https://wa.me/9779844740360">Chat on Whatsapp</Link> &nbsp;or call &nbsp;

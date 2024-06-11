@@ -2,6 +2,7 @@ import React from 'react'
 import Socialmedia from './Socialmedia'
 import Image from 'next/image'
 import { FaHeart } from "react-icons/fa6";
+import Link from 'next/link';
 
 const Copywrite = () => {
   return (
@@ -22,9 +23,9 @@ const Copywrite = () => {
         </a>&nbsp;All Right Reserved.
       </div>
 
-      <div className="flex text-center align-center justify-between gap-2 items-center  w-full">
-      <Image className='m-auto' src="/logo.svg" width={30} height={30} alt="" />
-      </div>
+    
+      <Link href="/" className='flex text-center justify-content'><Image  src="/logo.svg" width={38} height={30} alt=""></Image></Link>
+
 
       <div className='flex items-center  w-full justify-end'>
 

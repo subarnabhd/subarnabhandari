@@ -6,11 +6,12 @@ const header = () => {
   return (
     <div className="s-header  sticky  top-0 h-[64px] flex items-center">
       <div className="container flex m-auto items-center justify-between">
-        <div className="flex flex-wrap items-center justify-between">
-          <Link className=" h-[25px] align-middle text-center flex" href="/">
-            <Image src="/logo.svg" width={190} height={100} alt="" />
-          </Link>
-        </div>
+        <Link
+          className=" h-[25px] text-center flex w-max justify-start"
+          href="/"
+        >
+          <Image src="/logo.svg" width={190} height={100} alt="" />
+        </Link>
 
         <div
           className="hidden w-full md:block md:w-auto px-10"
@@ -28,7 +29,7 @@ const header = () => {
             <li>
               <Link
                 href="/about"
-                    className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
+                className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
               >
                 About
               </Link>
@@ -36,7 +37,7 @@ const header = () => {
             <li>
               <Link
                 href="/studio"
-                    className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
+                className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
               >
                 Studio<b>.</b>
               </Link>
@@ -44,7 +45,7 @@ const header = () => {
             <li>
               <Link
                 href="/portfolio"
-                    className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
+                className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
               >
                 Portfolio
               </Link>
@@ -52,7 +53,7 @@ const header = () => {
             <li>
               <Link
                 href="/contact"
-                   className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
+                className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
               >
                 Contact
               </Link>
@@ -60,11 +61,9 @@ const header = () => {
           </ul>
         </div>
 
-        <div className="flex flex-wrap items-center justify-between">
-          <Link className=" h-[25px] align-middle text-center flex" href="/">
-            <Image src="/menu.svg" width={190} height={100} alt="" />
-          </Link>
-        </div>
+        <Link className=" h-[25px] align-middle text-center flex" href="/">
+          <Image src="/menu.svg" width={190} height={100} alt="" />
+        </Link>
       </div>
     </div>
   );
