@@ -10,8 +10,8 @@ const Socialmedia = () => {
   return (
     <div aria-label="Social media links" className="flex row gap-3 w-min">
       <Link
-        className="p-3 text-l color-neutral-1 rounded-full bg-primary-900 hover-bg-primary-700"
-        href="https://www.facebook.com/vhandar.store"
+        className="p-3 text-l color-neutral-1  bg-primary-900 hover-bg-primary-700"
+        href="https://www.facebook.com/subarnabhd"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Facebook"
@@ -21,8 +21,8 @@ const Socialmedia = () => {
         <span className="sr-only">Facebook</span>
       </Link>
       <Link
-        className="p-3 text-l color-neutral-1 rounded-full bg-primary-900 hover-bg-primary-700"
-        href="https://www.instagram.com/vhandar.store"
+        className="p-3 text-l color-neutral-1  bg-primary-900 hover-bg-primary-700"
+        href="https://www.instagram.com/subarnabhd"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram"
@@ -32,8 +32,8 @@ const Socialmedia = () => {
         <span className="sr-only">Instagram</span>
       </Link>
       <Link
-        className="p-3 text-l color-neutral-1 rounded-full bg-primary-900 hover-bg-primary-700"
-        href="https://www.tiktok.com/@vhandar.store"
+        className="p-3 text-l color-neutral-1  bg-primary-900 hover-white70"
+        href="https://www.tiktok.com/@subarnabhd"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="TikTok"
@@ -43,8 +43,8 @@ const Socialmedia = () => {
         <span className="sr-only">TikTok</span>
       </Link>
       <Link
-        className="p-3 text-l color-neutral-1 rounded-full bg-primary-900 hover-bg-primary-700"
-        href="https://linkedin.com/company/vhandar"
+        className="p-3 text-l color-neutral-1  bg-primary-900 hover-bg-primary-700"
+        href="https://linkedin.com/company/subarnabhd"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"
@@ -54,8 +54,8 @@ const Socialmedia = () => {
         <span className="sr-only">LinkedIn</span>
       </Link>
       <Link
-        className="p-3 text-l color-neutral-1 rounded-full bg-primary-900 hover-bg-primary-700"
-        href="mailto:vhandar.store@gmail.com"
+        className="p-3 text-l color-neutral-1  bg-primary-900 hover-bg-primary-700"
+        href="mailto:subarnabhd@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Email"

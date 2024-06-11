@@ -258,3 +258,10 @@ body {
   -webkit-backdrop-filter: blur(15px) !important;
   border-bottom: 1px solid rgba(121, 121, 121, 0.1) !important;
 }
+main{
+  min-height: calc(100vh - 520px);
+  background-color: white;
+}
+b{
+  color:var(--red100);
+}
