@@ -581,3 +581,50 @@ color: var(--black100);
 .home-banner,.studio-banner{
   min-height: calc(100vh - 64px);
 }
+
+
+.c-home {
+  background-color: black;
+  background-image: url("/home/grid.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 1600px auto;
+  display: grid;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 64px);
+  padding: 50px;
+  transform: translate3d(100, 0, 0) scale(0, 0);
+}
+
+
+
+
+/* Add this to your global CSS file or a component-specific CSS */
+.logo-slider-container {
+  overflow-x: hidden;
+  white-space: nowrap;
+  display: inline-flex;
+  animation: slide 5s linear infinite;
+}
+
+.logo-img {
+  height: 50px; /* Adjust the height of your logos */
+  width: auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

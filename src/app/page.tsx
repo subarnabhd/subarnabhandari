@@ -1,6 +1,7 @@
 import Boxgallery from '@/components/home/Boxgallery'
 import Hire from '@/components/home/Hire'
 import Homebanner from '@/components/home/Homebanner'
+import Logoslider from '@/components/home/Logoslider'
 import Whychoose from '@/components/home/Whychoose'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -13,7 +14,7 @@ const page = () => {
 
       
     <Homebanner/>
-    <div className="text-6xl text-center bg-[#F5F5F7] p-20 font-extrabold w-header">
+    <div className="text-5xl text-center bg-[#F5F5F7] pb-20 font-extrabold w-header">
       <Link className="color-black20 hover-color-black40" href="mailto:hello@subarnabhandari.com"> hello@subarnabhandari.com</Link>
     </div>
   
@@ -30,6 +31,7 @@ const page = () => {
 <Whychoose/>
 <Boxgallery/>
 <Hire/>
+<Logoslider/>
 
     </main>
   )

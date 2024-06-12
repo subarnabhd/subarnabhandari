@@ -73,6 +73,9 @@ const Studiobanner = () => {
         <span className="sr-only">LinkedIn</span>
       </Link>
 
+
+      
+
     </div>
   )
 }
