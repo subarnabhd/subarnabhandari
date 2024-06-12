@@ -9,7 +9,7 @@ const page = () => {
 
       <Studiobanner />
 
-      <div id="aboutstudio" className=" color-black100 flex flex-col items-center justify-center text-6xl font-bold gap-5  py-[200px] w-header">
+      <div id="aboutstudio" className=" color-black100 flex flex-col items-center justify-center text-6xl font-bold gap-5  py-[200px] w-header bg-white">
         <h1 className="flex text-gray-400">
           <p className="text-black">Studio</p>
           <b>.</b>Creating the brands
@@ -28,7 +28,7 @@ const page = () => {
 
 
 
-          <div className="flex gap-5 align-center text-center py-5 pb-20 w-3/5 m-auto">
+          <div className="flex gap-5 align-center text-center py-5 pb-20 w-4/5 m-auto">
             <div className="site-box p-10">
               <Image src="/studio/branding.png" className="m-auto p-5" alt="Branding &amp; Identity" width={300} height={100}></Image>
               <h2 className="text-2xl font-bold pb-5">Branding</h2>
@@ -72,7 +72,7 @@ const page = () => {
                     conventional web and mobile applications and the solutions built
                     using cutting-edge technologies.
                   </p>
-                <div className=" flex gap-4 w-5/6 m-auto">
+                <div className=" flex gap-4 w-11/12 m-auto">
                   <div className="site-box flex flex-col gap-7 p-10">
                     <Image src="/studio/values-1.webp" className="m-auto" alt="..." width={80} height={100}></Image>
                     <h4 className="text-2xl bold">Ownership</h4>
