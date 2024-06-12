@@ -37,7 +37,6 @@ const page = () => {
         </div>
         <div className="col-2">
           <div className="bg-white p-10 rounded-2xl">
-<Contactform/>
           </div>
         </div>
       </div>
