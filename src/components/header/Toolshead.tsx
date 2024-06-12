@@ -1,71 +1,58 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const toolshead = () => {
   return (
-    <div className="s-header sticky top-0 h-[64px] flex items-center">
-      <div className="container flex m-auto items-center justify-between">
-        <div className="flex flex-wrap items-center justify-between">
-          <Link className=" h-[25px] align-middle text-center flex" href="/">
-            <Image src="/logo.svg" width={190} height={100} alt="" />
+    <div className="s-header ">
+    <div className="container m-auto flex align-middle items-center justify-between">
+      <div className="flex gap-2 align-middle items-center justify-between ">
+        <Link href="https://tools.subarnabhandari.com">
+          <Image src="/tools/tools.svg" width={35} height={100} alt="Tools Icon" />
+        </Link>
+        <Link  href="https://tools.subarnabhandari.com" className="sitetitle" aria-current="page">
+          <p className="font-bold text-lg">Tools.</p>
+        </Link>
+        <p className="font-base text-[10px] text-gray-400">
+          By&nbsp;
+          <Link className="hover-color-red100 " href="https://subarnabhandari.com" rel="noopener">
+            Subarna
           </Link>
-        </div>
-
-        <div
-          className="hidden w-full md:block md:w-auto px-10"
-          id="navbar-default"
-        >
-          <ul className="font-medium flex flex-col p-4  md:p-0 mt-4 border  rounded-lg md:flex-row md:space-x rtl:space-x-reverse md:mt-0 md:border-0">
-            <li>
-              <Link
-                href="/"
-                className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/about"
-                    className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/studio"
-                    className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
-              >
-                Studio<b>.</b>
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/portfolio"
-                    className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
-              >
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                   className="block px-5 py-3 text-xs rounded-full color-white95 hover-color-white100"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        <div className="flex flex-wrap items-center justify-between">
-          <Link className=" h-[25px] align-middle text-center flex" href="/">
-            <Image src="/menu.svg" width={190} height={100} alt="" />
-          </Link>
-        </div>
+        </p>
       </div>
+
+      <div className="flex  mb-hide">
+        <ul className="icondrop">
+          <li className="nav-item mb-hide">
+            <Link href="https://subarnabhandari.com" className="primary-sm-btn" target="_blank" type="button">
+              Subarnabhandari.com
+            </Link>
+          </li>
+
+          <li className="nav-item icon-drop-item">
+            <div className="dropdown-center">
+              <Link href="" className="dropdown-toggle nav-link" type="button" data-bs-toggle="dropdown" aria-expanded="false"></Link>
+              {/* <ul className="dropdown-menu">
+                <li>
+                  <Link className="dropdown-item" target="_blank" href="https://wa.me/9779844740360">
+                    &nbsp; Whatsapp Chat
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" target="_blank" href="https://www.messenger.com/t/Subarnabhd">
+                    &nbsp; Messenger Chat
+                  </Link>
+                </li>
+              </ul> */}
+            </div>
+          </li>
+
+        
+        </ul>
+      </div>
+    </div>
     </div>
   );
 };

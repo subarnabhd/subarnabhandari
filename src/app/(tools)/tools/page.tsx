@@ -2,9 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaAngleRight } from "react-icons/fa6";
+import Toolshead from "@/components/header/Toolshead";
 const page = () => {
   return (
     <main className="bg-black">
+      <Toolshead />
       <div className="container m-auto">
 
         <div className="flex gap-5 py-5">
