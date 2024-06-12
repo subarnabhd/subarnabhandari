@@ -23,7 +23,7 @@ const Whychoose = () => {
                 <div>
 
                     <div className='w-1/2 flex flex-col gap-5 p-5'>
-                        <div className="flex p-5 rounded-3xl border border-gray-800 gap-5 w-[388px] items-center">
+                        <div className="flex p-5 rounded-3xl border border-gray-800 gap-5 w-[388px] items-center ml-[-100px]">
                             <Image src="/home/svg0.svg" alt="" width={40} height={100}></Image>
                             <div>
                                 <h6 className='font-semibold text-lg'>Top notch quality</h6>
@@ -39,7 +39,7 @@ const Whychoose = () => {
                             </div>
                         </div>
 
-                        <div className="flex p-5 rounded-3xl border border-gray-800 gap-5 w-[388px] items-center">
+                        <div className="flex p-5 rounded-3xl border border-gray-800 gap-5 w-[388px] items-center ml-[-80px]">
                             <Image src="/home/svg2.svg" alt="" width={40} height={100}></Image>
                             <div>
                             <h6 className='font-semibold text-lg'>Always ready to chat</h6>
@@ -55,7 +55,7 @@ const Whychoose = () => {
                             </div>
                         </div>
 
-                        <div className="flex p-5 rounded-3xl border border-gray-800 gap-5 w-[388px] items-center">
+                        <div className="flex p-5 rounded-3xl border border-gray-800 gap-5 w-[388px] items-center ml-[80px]">
                             <Image src="/home/svg4.svg" alt="" width={40} height={100}></Image>
                             <div>
                             <h6 className='font-semibold text-lg'>Affordable</h6>

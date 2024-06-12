@@ -6,8 +6,8 @@ import Link from 'next/link'
 import React from 'react'
 import { FaRegPaperPlane } from "react-icons/fa";
 import Homebanner from '@/components/home/Homebanner'
-import Logoslider from '@/components/home/Logoslider'
 import Whychoose from '@/components/home/Whychoose'
+import ClientSlider from '@/components/home/ClientSlider'
 
 const page = () => {
   return (
@@ -34,7 +34,7 @@ const page = () => {
 <Whychoose/>
 <Boxgallery/>
 <Hire/>
-<Logoslider/>
+<ClientSlider/>
 
     </main>
   )
