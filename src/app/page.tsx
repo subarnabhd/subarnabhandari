@@ -8,6 +8,7 @@ import { FaRegPaperPlane } from "react-icons/fa";
 import Homebanner from '@/components/home/Homebanner'
 import Whychoose from '@/components/home/Whychoose'
 import ClientSlider from '@/components/home/ClientSlider'
+import GoodDesign from '@/components/home/GoodDesign'
 
 const page = () => {
   return (
@@ -33,6 +34,7 @@ const page = () => {
 
 <Whychoose/>
 <Boxgallery/>
+<GoodDesign/>
 <Hire/>
 <ClientSlider/>
 

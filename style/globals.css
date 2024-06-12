@@ -628,3 +628,17 @@ color: var(--black100);
     transform: translateX(-100%);
   }
 }
+
+
+
+
+.good-design{
+    background-image: url(/home/Dot-Pattern.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+}

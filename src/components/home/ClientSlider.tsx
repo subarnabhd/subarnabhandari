@@ -1,233 +1,61 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
-
+import React from 'react';
 
 const ClientSlider = () => {
+  const clients = [
+    { link: 'https://www.goldenmudcreation.com/', imageSrc: '/client/goldenmudcreation.webp', alt: 'Goldenmud Creation' },
+    { link: 'https://www.facebook.com/gwnofficial/', imageSrc: '/client/ghostwritingnepal.webp', alt: 'Ghost Writing Nepal' },
+    { link: '#', imageSrc: '/client/moviemandala.webp', alt: 'Movie Mandala' },
+    { link: 'https://designpac.net', imageSrc: '/client/designpac.webp', alt: 'Design Pac' },
+    { link: 'https://qubex.com.np/', imageSrc: '/client/qubexedu.webp', alt: 'QubexEdu - Qbex' },
+    { link: 'http://www.sallerikhabar.com/', imageSrc: '/client/sallerikhabar.webp', alt: 'Sallerikhabra' },
+    { link: 'https://www.facebook.com/p/Speedy-Gateways-Travels-and-Tours-Pvt-Ltd-200057447669327/', imageSrc: '/client/speedygateways.webp', alt: 'Speedy Gateways' },
+    { link: 'https://www.facebook.com/sulavsmsnepal/', imageSrc: '/client/sulavsms.webp', alt: 'Sulav SMS' },
+    { link: '#', imageSrc: '/client/sumeshacollection.webp', alt: 'Sumesha Collection' },
+    { link: 'https://www.facebook.com/techtrixnepal/', imageSrc: '/client/techtrix.webp', alt: 'Tech Trix Nepal' },
+    { link: 'https://facebook.com/thechoicecafe', imageSrc: '/client/thechoicecafe.webp', alt: 'The Choice Cafe' },
+    { link: 'https://ttworld.com.np/', imageSrc: '/client/ttworldeducationalconsultancy.webp', alt: 'TTworld Educational Consultancy' },
+    { link: 'https://www.ovenfreshnepal.com/', imageSrc: '/client/ovenfresh.webp', alt: 'Oven Fresh Bakery' },
+    { link: 'https://sethreadingsalon.com/', imageSrc: '/client/stylisheyebrowsthreading.webp', alt: 'Stylish Eyebrows Threading' },
+    { link: '#', imageSrc: '/client/baidikkendra.webp', alt: 'Baidik Kendra' },
+    { link: 'https://www.risenepalrise.com/', imageSrc: '/client/risenepalrise.webp', alt: 'Rise Nepal Rise' },
+    { link: 'https://osrdigital.com.np/', imageSrc: '/client/osrdigital.webp', alt: 'OSR Digital' },
+    { link: 'link_to_slide_21', imageSrc: '/client/nepalpizzaschool.webp', alt: 'Nepal Pizza School' },
+    { link: 'https://palikapatra.com/', imageSrc: '/client/palikapatra.webp', alt: 'Palika Patra' },
+    { link: 'https://gandakiunesco.org/', imageSrc: '/client/gandakiunescoclub.webp', alt: 'Gandaki Unesco Club' },
+    { link: 'http://www.fernwehedu.com/', imageSrc: '/client/fernwehiInternational.webp', alt: 'Fernwehi International' },
+    { link: '#', imageSrc: '/client/mayadevitv.webp', alt: 'Mayadevi TV' },
+    { link: '#', imageSrc: '/client/ucando.webp', alt: 'U Can Do' },
+    { link: 'https://www.mad-honey.store', imageSrc: '/client/madhoneystore.webp', alt: 'Mad Honey Store' },
+    { link: 'https://adventureseriesnepal.com/', imageSrc: '/client/adventureseriesnepal.webp', alt: 'Adventure Series Nepal' },
+    { link: 'https://flavorbakerynepal.com/', imageSrc: '/client/flavorbakery.webp', alt: 'Flavor Bakery Nepal' },
+    { link: '#', imageSrc: '/client/ghaila.webp', alt: 'Ghaila Oil' },
+    { link: '#', imageSrc: '/client/hulasfoods.webp', alt: 'Hulas Foods' },
+    { link: '#', imageSrc: '/client/itharimedical.webp', alt: 'Ithari Medical' },
+    { link: 'https://kaveriinn.com/', imageSrc: '/client/kaverinn.webp', alt: 'Kaveri INN' },
+    { link: 'https://kantipurinfotech.com/', imageSrc: '/client/kit.webp', alt: 'Kantipur Infotech-KIT' },
+    { link: '#', imageSrc: '/client/mobilelife.webp', alt: 'Mobile Life' },
+    { link: 'https://www.youtube.com/@OSRReality', imageSrc: '/client/osrreality.webp', alt: 'OSR Reality' },
+    { link: 'https://rrgcafrica.com/', imageSrc: '/client/rgg.webp', alt: 'Radaur Realty Group & Consultants' },
+    { link: 'https://sajhainvestment.com/', imageSrc: '/client/Sajha.webp', alt: 'Sajha Investment' },
+    { link: '#', imageSrc: '/client/durapave.webp', alt: 'Durapave' },
+    { link: '#', imageSrc: '/client/shivamcement.webp', alt: 'Shivam Cement' },
+    { link: '#', imageSrc: '/client/slashplus.webp', alt: 'Slash Plus' },
+    { link: '#', imageSrc: '/client/swasthanari.webp', alt: 'Swastha Nari' },
+    { link: 'https://techkagaj.com/', imageSrc: '/client/techkagaj.webp', alt: 'Tech Kagaj' },
+    { link: 'https://trackshieldsgps.com/', imageSrc: '/client/trackshield.webp', alt: 'Track Shield' }
+  ];
+
   return (
-
-    <div className="flex container w-max m-auto  py-10 pb-20  overflow-hidden">
-
-
-      <Link href="https://www.goldenmudcreation.com/" target="_blank">
-        <Image src="/client/goldenmudcreation.webp" alt="Goldenmud Creation" width={200} height={200} />
-      </Link>
-
-      <Link href="https://www.facebook.com/gwnofficial/" target="_blank">
-        <Image src="/client/ghostwritingnepal.webp" alt="Ghost Writing Nepal" width={200} height={200} />
-      </Link>
-
-
-      <Link href="#" target="_blank">
-        <Image src="/client/moviemandala.webp" alt="Movie Mandala" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://designpac.net" target="_blank">
-        <Image src="/client/designpac.webp" alt="Design Pac" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://qubex.com.np/" target="_blank">
-        <Image src="/client/qubexedu.webp" alt="QubexEdu - Qbex" width={200} height={200} />
-      </Link>
-
-
-      <Link href="http://www.sallerikhabar.com/" target="_blank">
-        <Image src="/client/sallerikhabar.webp" alt="Sallerikhabra" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://www.facebook.com/p/Speedy-Gateways-Travels-and-Tours-Pvt-Ltd-200057447669327/"
-        target="_blank">
-        <Image src="/client/speedygateways.webp" alt="Speedy Gateways" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://www.facebook.com/sulavsmsnepal/" target="_blank">
-        <Image src="/client/sulavsms.webp" alt="Sulav SMS" width={200} height={200} />
-      </Link>
-
-
-      <Link href="#" target="_blank">
-        <Image src="/client/sumeshacollection.webp" alt="Sumesha Collection" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://www.facebook.com/techtrixnepal/" target="_blank">
-        <Image src="/client/techtrix.webp" alt="Tech Trix Nepal" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://facebook.com/thechoicecafe" target="_blank">
-        <Image src="/client/thechoicecafe.webp" alt="The Choice Cafe" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://ttworld.com.np/" target="_blank">
-        <Image src="/client/ttworldeducationalconsultancy.webp" alt="TTworld Educational Consultancy" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://www.ovenfreshnepal.com/" target="_blank">
-        <Image src="/client/ovenfresh.webp" alt="Oven Fresh Bakery" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://sethreadingsalon.com/" target="_blank">
-        <Image src="/client/stylisheyebrowsthreading.webp" alt="Stylish Eyebrows Threading" width={200} height={200} />
-      </Link>
-
-
-      <Link href="#" target="_blank">
-        <Image src="/client/baidikkendra.webp" alt="Baidik Kendra" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://www.risenepalrise.com/" target="_blank">
-        <Image src="/client/risenepalrise.webp" alt="Rise Nepal Rise" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://osrdigital.com.np/" target="_blank">
-        <Image src="/client/osrdigital.webp" alt="OSR Digital" width={200} height={200} />
-      </Link>
-
-
-      <Link href="link_to_slide_21" target="_blank">
-        <Image src="/client/nepalpizzaschool.webp" alt="Nepal Pizza School" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://palikapatra.com/" target="_blank">
-        <Image src="/client/palikapatra.webp" alt="Palika Patra" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://gandakiunesco.org/" target="_blank">
-        <Image src="/client/gandakiunescoclub.webp" alt="Gandaki Unesco Club" width={200} height={200} />
-      </Link>
-
-
-      <Link href="http://www.fernwehedu.com/" target="_blank">
-        <Image src="/client/fernwehiInternational.webp" alt="Fernwehi International" width={200} height={200} />
-      </Link>
-
-
-      <Link href="#" target="_blank">
-        <Image src="/client/mayadevitv.webp" alt="Mayadevi TV" width={200} height={200} />
-      </Link>
-
-
-      <Link href="#" target="_blank">
-        <Image src="/client/ucando.webp" alt="U Can Do" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://www.mad-honey.store" target="_blank">
-        <Image src="/client/madhoneystore.webp" alt="Mad Honey Store" width={200} height={200} />
-      </Link>
-
-
-
-      <Link href="https://adventureseriesnepal.com/" target="_blank">
-        <Image src="/client/adventureseriesnepal.webp" alt="Adventure Series Nepal" width={200} height={200} />
-      </Link>
-
-
-
-      <Link href="https://flavorbakerynepal.com/" target="_blank">
-        <Image src="/client/flavorbakery.webp" alt="Flavor Bakery Nepal" width={200} height={200} />
-      </Link>
-
-
-
-      <Link href="#" target="_blank">
-        <Image src="/client/ghaila.webp" alt="Ghaila Oil" width={200} height={200} />
-      </Link>
-
-
-
-      <Link href="#" target="_blank">
-        <Image src="/client/hulasfoods.webp" alt="Hulas Foods" width={200} height={200} />
-      </Link>
-
-
-
-      <Link href="#" target="_blank">
-        <Image src="/client/itharimedical.webp" alt="Ithari Medical" width={200} height={200} />
-      </Link>
-
-
-
-      <Link href="https://kaveriinn.com/" target="_blank">
-        <Image src="/client/kaverinn.webp" alt="Kaveri INN" width={200} height={200} />
-      </Link>
-
-
-
-      <Link href="https://kantipurinfotech.com/" target="_blank">
-        <Image src="/client/kit.webp" alt="Kantipur Infotech-KIT" width={200} height={200} />
-      </Link>
-
-
-
-      <Link href="#" target="_blank">
-        <Image src="/client/mobilelife.webp" alt="Mobile Life" width={200} height={200} />
-      </Link>
-
-
-
-      <Link href="https://www.youtube.com/@OSRReality" target="_blank">
-        <Image src="/client/osrreality.webp" alt="OSR Reality" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://rrgcafrica.com/" target="_blank">
-        <Image src="/client/rgg.webp" alt="Radaur Realty Group & Consultants" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://sajhainvestment.com/" target="_blank">
-        <Image src="/client/Sajha.webp" alt="Sajha Investment" width={200} height={200} />
-      </Link>
-
-
-      <Link href="#" target="_blank">
-        <Image src="/client/durapave.webp" alt="Durapave" width={200} height={200} />
-      </Link>
-
-
-      <Link href="#" target="_blank">
-        <Image src="/client/shivamcement.webp" alt="Shivam Cement" width={200} height={200} />
-      </Link>
-
-
-      <Link href="#" target="_blank">
-        <Image src="/client/slashplus.webp" alt="Slash Plus" width={200} height={200} />
-      </Link>
-
-
-      <Link href="#" target="_blank">
-        <Image src="/client/swasthanari.webp" alt="Swastha Nari" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://techkagaj.com/" target="_blank">
-        <Image src="/client/techkagaj.webp" alt="Tech Kagaj" width={200} height={200} />
-      </Link>
-
-
-      <Link href="https://trackshieldsgps.com/" target="_blank">
-        <Image src="/client/trackshield.webp" alt="Track Shield" width={200} height={200} />
-      </Link>
+    <div className="flex container w-max m-auto py-10 pb-20 overflow-hidden">
+      {clients.map((client, index) => (
+        <Link key={index} href={client.link} target="_blank">
+          <Image src={client.imageSrc} alt={client.alt} width={200} height={200} />
+        </Link>
+      ))}
     </div>
-
-
-
-
-
   );
-}
+};
 
 export default ClientSlider;
