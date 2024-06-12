@@ -1,11 +1,13 @@
 import Boxgallery from '@/components/home/Boxgallery'
 import Hire from '@/components/home/Hire'
-import Homebanner from '@/components/home/Homebanner'
-import Logoslider from '@/components/home/Logoslider'
-import Whychoose from '@/components/home/Whychoose'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { FaRegPaperPlane } from "react-icons/fa";
+import Homebanner from '@/components/home/Homebanner'
+import Logoslider from '@/components/home/Logoslider'
+import Whychoose from '@/components/home/Whychoose'
 
 const page = () => {
   return (
@@ -14,8 +16,9 @@ const page = () => {
 
       
     <Homebanner/>
-    <div className="text-5xl text-center bg-[#F5F5F7] pb-20 font-extrabold w-header">
-      <Link className="color-black20 hover-color-black40" href="mailto:hello@subarnabhandari.com"> hello@subarnabhandari.com</Link>
+    <div className="text-5xl  bg-[#F5F5F7] pb-20 font-extrabold w-header flex">
+      
+      <Link className="color-black20 hover-color-black40 m-auto flex gap-4" href="mailto:hello@subarnabhandari.com"><FaRegPaperPlane />hello@subarnabhandari.com</Link>
     </div>
   
     <div className="text-center bg-[#F5F5F7] p-5 w-header">
