@@ -1,4 +1,3 @@
-import About from "@/components/About";
 import Contactform from "@/components/Contactform";
 import React from "react";
 import { IoHeart } from "react-icons/io5";
@@ -37,10 +36,10 @@ const page = () => {
         </div>
         <div className="col-2">
           <div className="bg-white p-10 rounded-2xl">
+<Contactform/>
           </div>
         </div>
       </div>
-      <About/>
     </main>
   );
 };
