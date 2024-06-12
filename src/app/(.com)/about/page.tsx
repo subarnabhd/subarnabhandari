@@ -1,6 +1,3 @@
-import About from '@/components/About'
-import Blogcard from '@/components/Blogcard'
-import Downloadapp from '@/components/Downloadapp'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
