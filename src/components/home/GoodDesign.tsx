@@ -22,6 +22,7 @@ interface SliderProps {
 const Slider: React.FC<SliderProps> = ({ slides }) => (
   <div className="good-design text-center py-20">
     
+      
           <h2 className="site-h text-black">Striving to create elegant & effortless designs.</h2>
           <p className="text-lg color-black55">Unlimited possibility to reach out. Create your own brand with Subarna.</p>
     

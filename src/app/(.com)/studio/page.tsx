@@ -1,3 +1,4 @@
+import ClientSlider from "@/components/home/ClientSlider";
 import Aboutstudio from "@/components/studio/Aboutstudio";
 import Studiobanner from "@/components/studio/Studiobanner";
 import Image from "next/image";
@@ -100,6 +101,13 @@ const page = () => {
                 </div>
               </div>
             </div>
+            <div className="a-approach">
+            <h1 className="site-h">Our Approach</h1>
+                  <p className="site-p">
+                  As a full-service UI UX design agency, we work with our clients to discover, define, design and develop web & mobile user experiences that add value and get you close to the ultimate goal. What would the ultimate success of your project look like? Asking the question at the beginning of each project allows us to be laser-focused throughout the entire design process.
+                  </p>
+            </div>
+            <ClientSlider/>
        
 
         </div>
