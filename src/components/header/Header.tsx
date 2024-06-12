@@ -13,6 +13,9 @@ const Header: React.FC = () => {
 
     if (!navigation) return;
 
+    // Add the initial transparent class
+    navigation.classList.add('transparent');
+
     const headerDarkMode = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       let isOverAnyDarkSection = false;
@@ -26,9 +29,13 @@ const Header: React.FC = () => {
         }
       });
 
-      if (scrollTop <= 45 || isOverAnyDarkSection) {
+      if (scrollTop <= 45) {
+        navigation.classList.add('transparent');
+        navigation.classList.remove('minimal');
+      } else if (isOverAnyDarkSection) {
         navigation.classList.add('minimal');
       } else {
+        navigation.classList.remove('transparent');
         navigation.classList.remove('minimal');
       }
     };
