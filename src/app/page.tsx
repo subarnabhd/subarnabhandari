@@ -9,6 +9,8 @@ import React from 'react'
 const page = () => {
   return (
     <main>
+
+
       
     <Homebanner/>
     <div className="text-6xl text-center bg-[#F5F5F7] p-20 font-extrabold w-header">
@@ -28,6 +30,7 @@ const page = () => {
 <Whychoose/>
 <Boxgallery/>
 <Hire/>
+
     </main>
   )
 }

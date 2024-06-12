@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "/style/blog.css";
+import "/style/header.css";
 import "/style/tools.css";
 import "/style/globals.css";
 import "/style/studio.css";
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
         <Header/>
+
         {children}
         <Footer/>
         <Copywrite/>

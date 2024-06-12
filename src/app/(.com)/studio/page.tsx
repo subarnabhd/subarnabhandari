@@ -5,9 +5,9 @@ import React from "react";
 
 const page = () => {
   return (
-    <main>
-      <Studiobanner />
+    <div>
 
+      <Studiobanner />
 
       <div id="aboutstudio" className=" color-black100 flex flex-col items-center justify-center text-6xl font-bold gap-5  py-[200px] w-header">
         <h1 className="flex text-gray-400">
@@ -105,7 +105,7 @@ const page = () => {
         </div>
       </div>
 
-    </main>
+    </div>
   );
 };
 

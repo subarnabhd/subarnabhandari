@@ -1,0 +1,193 @@
+
+
+  .menu .modal-body .left,
+  .menu .modal-body .center {
+    width: 100%;
+  }
+  
+  .menu .modal-body .right {
+    margin-top: 28px;
+    width: 100%;
+  }
+  
+  .menu .modal-body .center {
+    margin-top: 28px;
+  }
+  
+  .menu .modal-body .left ul,
+  .menu .modal-body .center ul,
+  .menu .modal-body .right ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu .modal-body .left a,
+  .menu .modal-body .center a,
+  .menu .modal-body .right {
+    text-decoration: none;
+    color: var(--white100);
+  }
+  
+  .menu .modal-body .left .modal-dot {
+    font-size: 80px;
+    font-weight: 600;
+  }
+  .menu .modal-body .center .modal-sm-dot {
+    font-size: 28px;
+    font-weight: 600;
+    font-weight: 500;
+  }
+  
+  .menu .modal-body .center h3 {
+    font-size: 18px;
+    color: var(--white100);
+    margin-bottom: 25px;
+  }
+  
+  .menu .modal-body .center li {
+    margin-bottom: 8px;
+  }
+  
+  .menu .modal-body .right h3 {
+    font-size: 18px;
+    color: var(--white100);
+    margin-bottom: 25px;
+  }
+  
+  .menu .modal-body .right h2 {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  
+  .modal-dot,
+  .modal-sm-dot {
+    transition: all 250ms ease-out;
+    position: relative;
+  }
+  
+  .menu .modal-dot:hover {
+    padding-left: 1.75rem;
+    color: var(--white100);
+  }
+  
+  .menu .modal-sm-dot:hover {
+    padding-left: 1rem;
+    color: var(--white100);
+  }
+  
+  .modal-sm-dot::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(50% - 10%);
+    height: 20%;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .modal-dot::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(50% - 7.5%);
+    height: 15%;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .modal-dot:hover::after,
+  .modal-sm-dot:hover::after {
+    opacity: 1;
+  }
+  
+  .modal-header button {
+    color: white !important;
+    background: 0;
+  }
+  
+  .menu .modal-body .right a {
+    margin-top: 15px;
+  }
+  
+  .menu .modal-body .right a:hover {
+    background-color: var(--primary);
+  }
+  
+  .menu .fade {
+    transition: opacity 0 ease-out;
+  }
+  
+  .menu .modal.fade .modal-dialog {
+    transition: transform 450ms ease-out !important;
+    transform: translate(0, -100%) !important;
+  }
+  
+  .menu .modal.show .modal-dialog {
+    transform: none !important;
+  }
+  
+  .menu .modal-footer {
+    align-content: left;
+    border: none;
+  }
+  
+  .menu .modal-container {
+    margin: auto;
+    max-width: 1432px;
+    padding: 25px 0px;
+    display: flex;
+    align-items: left;
+    align-content: center;
+    margin: auto;
+    border-top: 0.5px solid var(--white30);
+    width: 100%;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .menu .modal-container .left {
+    display: flex;
+    align-items: left;
+    align-content: left;
+    justify-content: space-between;
+  }
+  
+  .menu .modal-footer a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+    color: var(--white100);
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-size: 12px;
+  }
+  
+  .menu .modal-footer a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .menu .modal-footer a:focus::after,
+  .menu .modal-footer a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .menu .modal-footer .right a {
+    margin-right: 0px;
+  }
