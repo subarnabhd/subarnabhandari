@@ -8,17 +8,17 @@ import { FaArrowDown } from "react-icons/fa6";
 
 const Studiobanner = () => {
   return (
-    <div className="studio-banner h-screen ">
+    <div className="studio-banner ">
       <div className='absolute top-[15%] left-1/2 transform -translate-x-1/2 flex flex-col gap-4 items-center m-auto'> 
       <Image
           className=" m-auto  text-right"
           src="/studio/tss.svg"
-          width={100}
+          width={80}
           height={100}
           alt=""
         />
-        <h2 className='text-5xl font-bold  text-center'>The Subarna Studio</h2>
-        <p className='color-white60 text-2xl  font-normal'>studio.subarnabhandari.com</p>
+        <h2 className='text-4xl font-bold  text-center'>The Subarna Studio</h2>
+        <p className='color-white60 text-xl  font-normal'>studio.subarnabhandari.com</p>
       </div>
 
 

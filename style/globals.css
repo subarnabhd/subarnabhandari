@@ -578,3 +578,6 @@ color: var(--black100);
 
 
 /* ------------- */
+.home-banner,.studio-banner{
+  min-height: calc(100vh - 64px);
+}
