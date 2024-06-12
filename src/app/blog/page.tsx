@@ -1,27 +1,22 @@
-import Blogcard from "@/components/Blogcard";
 import React from "react";
+import { FaMicroblog } from "react-icons/fa";
 
 const page = () => {
   return (
     <main className="">
-      <div className="bg-white">
-        <div className="text-white bg-primary-300 ">
-          <div className='container py-20  flex flex-col gap-5 m-auto text-center'>
-            <h1 className="font-bold text-5xl">Vhandar Blogs</h1>
-            <p className="color-neutral-3">
-              We bring you the latest updates and learnings curated by our
-              in-house team.
+      <div className="blog-head py-20">
+        <div className="container m-auto text-center">
+          <p className="text-6xl m-auto  w-max">
+            <FaMicroblog />
+          </p>
+          <h2 className="text-3xl py-3 font-medium">GOOD READS</h2>
+          <div className="text-sm font-light ">
+            <p>
+              The unread story is not a story; it is little black marks on wood
+              pulp.
             </p>
+            <p>The reader, reading it, makes it live: a live thing, a story.</p>
           </div>
-        </div>
-      </div>
-      <div className="blog-section">
-        <div className="container flex   py-10  m-auto flex-wrap ">
-          <Blogcard />
-          <Blogcard />
-          <Blogcard />
-          <Blogcard />
-   
         </div>
       </div>
     </main>
@@ -29,4 +24,3 @@ const page = () => {
 };
 
 export default page;
-
