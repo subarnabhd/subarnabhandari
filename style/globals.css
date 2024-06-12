@@ -642,3 +642,16 @@ color: var(--black100);
     align-items: center;
     text-align: center;
 }
+
+
+.unicode img:hover {
+  transform: rotate(360deg);
+  border-radius: 10000px;
+    box-shadow: rgba(255, 0, 0, 0.242) 0px 7px 25px 0px;
+
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
