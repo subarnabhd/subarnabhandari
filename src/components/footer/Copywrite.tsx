@@ -1,5 +1,4 @@
 import React from 'react'
-import Socialmedia from './Socialmedia'
 import Image from 'next/image'
 import { FaHeart } from "react-icons/fa6";
 import Link from 'next/link';

@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Socialmedia from "./Socialmedia";
-import Downloadapp from "../Downloadapp";
 
 function Footer() {
   return (
