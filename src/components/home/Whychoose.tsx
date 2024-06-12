@@ -7,19 +7,18 @@ const Whychoose = () => {
         <div className='bg-black py-20'>
             <div className="container m-auto flex gap-5">
 
-            <div className='w-1/2 flex flex-col gap-5 '>
+            <div className='flex flex-col gap-5 justify-center  text-left' >
+                
                     <h1 className="text-4xl font-bold">Why to Choose ?</h1>
-                    <p className="text-lg color-white80">Over the years, I have acquired relevant skills and experience, which I shall bring to you.
+                    <p className="text-lg color-white80 pr-20 mr-20">Over the years, I have acquired relevant skills and experience, which I shall bring to you.
                         These “why me” reasons should be enough to convince someone who is looking for a design solution.
                         But if you’re still in doubt,
                     </p>
-                    {/* <Link href="/contact" type="button">Let’s do a small test together</Link> */}
+                    <Link href="/contact" type="button">Let’s do a small test together</Link>
 
                     <p>Agree or disagree with any of the above?</p>
-                    {/* <div>
-                    <Link className="primary-btn" type="button" target="_blank" href="/contact">Send Your honest feedback</Link>
-                    </div> */}
-                </div>
+                    <Link className="primary-btn w-max" type="button" target="_blank" href="/contact">Send Your honest feedback</Link>
+                    </div>
                 <div>
 
                     <div className='w-1/2 flex flex-col gap-5 p-5'>
