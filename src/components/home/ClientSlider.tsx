@@ -48,7 +48,7 @@ const ClientSlider = () => {
   ];
 
   return (
-    <div className="flex container w-max m-auto py-10 pb-20 overflow-hidden">
+    <div className="flex container w-max m-auto py-10 pb-20 overflow-hidden bg-white w-header">
       {clients.map((client, index) => (
         <Link key={index} href={client.link} target="_blank">
           <Image src={client.imageSrc} alt={client.alt} width={200} height={200} />

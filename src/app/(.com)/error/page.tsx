@@ -16,7 +16,7 @@ const NotFoundPage = () => {
       <p className='color-white70'>
         The page you're searching for seems to have shuffled itself into another deck.
       </p>
-        <Link className='primary-btn w-max m-auto' href="https://subarnabhandari.com/">subarnabhandari.com
+        <Link className='primary-btn w-max m-auto' href="/">subarnabhandari.com
         </Link>
     </main>
   );

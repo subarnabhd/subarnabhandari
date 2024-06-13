@@ -20,7 +20,7 @@ interface SliderProps {
 }
 
 const Slider: React.FC<SliderProps> = ({ slides }) => (
-  <div className="good-design text-center py-20">
+  <div className="good-design text-center py-20 bg-white w-header">
     
       
           <h2 className="site-h text-black">Striving to create elegant & effortless designs.</h2>
