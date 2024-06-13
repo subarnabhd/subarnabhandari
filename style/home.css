@@ -35,7 +35,7 @@
   color: #ffffff5a;
   align-content: center;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 1px;
   font-weight: 300;
 }
@@ -56,7 +56,7 @@
   align-items: center;
   align-content: center;
   text-align: center;
-  bottom: 580px;
+  bottom: 555px;
   left: -238px;
   transform: rotate(-90deg) translate(-50%, 0);
   gap: 30px;
@@ -70,7 +70,7 @@
   align-items: center;
   align-content: center;
   text-align: center;
-  bottom: 230px;
+  bottom: 225px;
   right: -60px;
   transform: rotate(-90deg) translate(-50%, 0);
   gap: 30px;
