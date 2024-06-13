@@ -133,3 +133,17 @@
   width: 1px;
   height: 60px;
 }
+
+
+
+
+.good-design{
+  background-image: url(/home/Dot-Pattern.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  text-align: center;
+}

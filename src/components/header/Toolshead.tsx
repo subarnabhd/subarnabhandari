@@ -9,15 +9,15 @@ const toolshead = () => {
     <div className="s-header ">
     <div className="container m-auto flex align-middle items-center justify-between">
       <div className="flex gap-2 align-middle items-center justify-between ">
-        <Link href="https://tools.subarnabhandari.com">
+        <Link href="/tools">
           <Image src="/tools/tools.svg" width={35} height={100} alt="Tools Icon" />
         </Link>
-        <Link  href="https://tools.subarnabhandari.com" className="sitetitle" aria-current="page">
+        <Link  href="/tools" className="sitetitle" aria-current="page">
           <p className="font-bold text-lg">Tools.</p>
         </Link>
         <p className="font-base text-[10px] text-gray-400">
           By&nbsp;
-          <Link className="hover-color-red100 " href="https://subarnabhandari.com" rel="noopener">
+          <Link className="hover-color-red100 " href="/" rel="noopener">
             Subarna
           </Link>
         </p>
@@ -26,7 +26,7 @@ const toolshead = () => {
       <div className="flex  mb-hide">
         <ul className="icondrop">
           <li className="nav-item mb-hide">
-            <Link href="https://subarnabhandari.com" className="primary-sm-btn" target="_blank" type="button">
+            <Link href="/" className="primary-sm-btn" target="_blank" type="button">
               Subarnabhandari.com
             </Link>
           </li>

@@ -63,7 +63,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <div className="s-header">
+    <div className="s-header" id="s-header">
       <div className="container flex m-auto items-center justify-between">
         <Link className="s-header-logo" href="/">
           {/* Add your logo here */}
