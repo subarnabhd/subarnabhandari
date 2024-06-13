@@ -5,7 +5,7 @@ import { FaAngleRight } from "react-icons/fa6";
 import Toolshead from "@/components/header/Toolshead";
 const page = () => {
   return (
-    <main className="bg-black">
+    <main>
       <Toolshead />
       <div className="container m-auto">
 

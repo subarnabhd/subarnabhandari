@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='p-10'>
+    <main className='justify-center items-center flex '>
 
     <div className=" unicode container m-auto align-middle text-center text-white  justify-center  flex flex-col border border-gray-900 p-10 w-5/12  rounded-3xl ">
         <div className="flex gap-4 justify-center items-center    py-2">
@@ -21,7 +21,7 @@ const page = () => {
  
           </iframe>
     </div>
-</div>
+</main>
   )
 }
 

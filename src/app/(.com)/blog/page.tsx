@@ -3,7 +3,7 @@ import { FaMicroblog } from "react-icons/fa";
 
 const page = () => {
   return (
-    <main className="">
+    <main >
       <div className="blog-head py-20">
         <div className="container m-auto text-center">
           <p className="text-6xl m-auto  w-max">

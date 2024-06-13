@@ -411,8 +411,8 @@ color: var(--primary-click);
   border-bottom: 1px solid rgba(121, 121, 121, 0.1) !important;
 }
 main{
-  /* min-height: calc(100vh - 520px); */
-  background-color: white;
+  min-height: calc(100vh - 430.86px);
+  /* background-color: white; */
 }
 b{
   color:var(--primary);

@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main className='bg-black'>
+    <main>
 
 
       <div className="container flex flex-col m-auto bg-neutral-4 rounded-2xl py-5 gap-10 pb-20">

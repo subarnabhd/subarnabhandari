@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
     return (
-        <main className='bg-black py-20'>
+        <main className=' flex justify-center items-center'>
 
             <div className="container m-auto flex justify-center border rounded-3xl border-gray-900 p-20 ">
                 <div className="w-1/2 justify-center items-center flex text-center flex-col p-10">
