@@ -2,17 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
 import { FaAngleRight } from "react-icons/fa6";
 import Toolshead from "@/components/header/Toolshead";
 
 const tools = () => {
-  const [hideHeader, setHideHeader] = useState(false);
-
-  useEffect(() => {
-    // Hide the header when the component mounts
-    setHideHeader(true);
-  }, []);
 
   return (
     <main>
