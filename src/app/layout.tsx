@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "/style/blog.css";
 import "/style/home.css";
 import "/style/link.css";
+import "/style/portfolio.css";
 import "/style/cv.css";
 import "/style/header.css";
 import "/style/tools.css";

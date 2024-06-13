@@ -1,0 +1,426 @@
+body {
+    background-color: var(--black100) !important;
+    font-family: Inter;
+  }
+  
+  
+  .portfolio-container {
+    margin: auto;
+    max-width: 1120px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .portfolio-header-section {
+    padding: 30px;
+    color: var(--white100);
+    border: 1px solid var(--white15);
+    border-top:none;
+    border-bottom: none;
+  
+  }
+  
+  .portfolio-header-section h2{
+    text-align: left;
+    padding-bottom: 10PX;
+  
+  }
+  .portfolio-header-section p{
+    max-width: 100%;
+    color: var(--white85);
+    text-align: left;
+  }
+
+  
+  .projectcard {
+    background-color: var(--white10);
+    overflow: hidden;
+    min-height: 500px;
+    width: -webkit-fill-available;
+    border-radius: 20px;
+    border: 1px solid var(--white15);
+    margin: 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .projectcard:hover {
+    border: 1px solid var(--white20);
+    /* transform: translatey(-10px); */
+    transition: all 0.2s ease-in-out;
+    background-color: var(--white10);
+    border: 1px solid var(--white15);
+    border-bottom: 3px;
+    box-shadow: rgba(133, 133, 133, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  .projectcard:hover .project-image{
+    filter: saturate(125%);
+    transition: transform 0.3s ease-in-out;
+  
+  }
+  .projectcard:hover .project-logo{
+    filter: saturate(125%);
+    transition: transform 0.3s ease-in-out;
+  
+  }
+  
+  .projectcard:hover .project-button{
+    transition: all 0.4s ease-in-out;
+    border:1px solid var(--white40);
+    color: var(--white100);
+  }
+  
+  
+  .project-logo {
+    height: 40px;
+    margin-bottom: 20px;
+    max-width: 180px;
+    object-fit: contain;
+  }
+  .project-title {
+    color: var(--white100);
+    font-size: 20px;
+    font-weight: 600;
+    }
+  
+  .project-name {
+    max-width: 250px;
+    text-transform: uppercase;
+    color: var(--white100);
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .project-sm-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0px 0;
+  }
+  .project-position {
+    color: var(--white80);
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .project-dot {
+    color: var(--white40);
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .project-timeline {
+    color: var(--white60);
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .project-description {
+    color: var(--white50);
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .project-button {
+    color: var(--white100);
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid var(--white20);
+    padding: 12px 20px;
+    border-radius: 100px;
+    display: block;
+    width: max-content;
+    font-weight: 600;
+  }
+  
+  .project-button:hover {
+    transition: all 0.4s ease-in-out;
+    background-color: var(--white100);
+    color: var(--black100)!important;
+  }
+  
+  .project-details {
+    display: flex;
+    padding: 50px 50px 50px 50px;
+    gap: 9px;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .project-image img {
+    max-height: 500px;
+    margin-right: -12px;  
+    max-width: 600px;
+    object-fit: contain;
+  }
+  
+  /* ------------------------------------------------- */
+  .portfolio-title {
+    color: var(--white);
+    background-color: var(--black95);
+    border: 1px solid var(--white15);
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    position: sticky!important;
+    position: -webkit-sticky;
+    top: 63px;
+    z-index: 10;
+  }
+  
+
+  
+  .ptitle {
+  
+    padding: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .portfolio-title h2 {
+    font-size: 12px;
+    color: var(--white);
+    text-align: left;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .ptitle h2 {
+    font-size: 18px;
+    color: var(--white);
+    text-align: left;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .appricate {
+    padding: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .appricate h2 {
+    color: var(--white90);
+    text-align: right;
+  }
+  
+  .appricate a {
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 6px;
+    padding: 6px 12px;
+  }
+  
+  .appricate a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+    padding: 6px 12px;
+  }
+  
+  .appricate h2 i {
+    color: var(--primary-hover);
+  }
+  .appricate h2 i:hover {
+    color: var(--primary);
+  
+  }
+  
+  
+  
+  
+  
+  
+  /* ---------------- */
+  
+  
+  /* -------------- Portfolio Banner Start ---------------- */
+  
+  .portfolio-banner {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+    display: flex;
+    align-content: center;
+    margin: 50px 20px 60px 20px;
+  }
+  
+  .portfolio-banner-container {
+    margin: 0px 20px;
+    width: 100%;
+    border-radius: 16px;
+    min-height: 200px;
+  overflow: hidden;
+  }
+  
+  .p-col-1 {
+    padding: 30px;
+    background-color: #001d26;
+  }
+  
+  .p-col-1 h2 {
+    margin-bottom: 5px;
+    font-size: 26px;
+    color: white;
+    text-align: left;
+    font-weight: 500;
+  }
+  
+  .p-col-1 strong {
+    font-size: 28px;
+    color: #0a3645;
+  }
+  
+  .p-col-1 p {
+    font-size: 16px;
+    color: var(--white90);
+    font-weight: 300;
+    margin: 0;
+  }
+  
+  .p-col-2 {
+    text-align: end;
+    padding: 14px;
+    background-color: #0a3645;
+    background-image: url("/image/portfolio/p-banner.webp");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .p-col-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,
+        rgba(0, 29, 38, 0.95) 1%,
+        rgba(0, 29, 38, 0.7) 6%,
+        rgba(0, 29, 38, 0.4) 12%,
+        rgba(0, 29, 38, 0.15) 16%,
+        rgba(0, 29, 38, 0) 20%);
+    pointer-events: none;
+  }
+  
+  .p-col-2 img {
+    width: 60px;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: #001d26;
+  }
+  
+  .portfolio-banner a {
+    margin: 2px;
+    padding: 8px 16px;
+    background-color: var(--blue);
+    border-radius: 50px;
+    color: var(--white);
+    border: 1px solid var(--blue);
+  }
+  
+  .portfolio-banner span{
+  font-weight: 200;
+  font-size: 24px;
+  }
+  .portfolio-banner-btn-container{
+    margin-top: 20px;
+  }
+  .portfolio-banner .btn1{
+    background-color: #0A3645;
+    color: #fff;
+    border: 1px solid #00161d;
+  }
+  .portfolio-banner .btn1:hover {
+    background-color: #001218;
+    color: #fff;
+    border: 1px solid #00161d;
+  }
+  
+  .portfolio-banner .btn2 {
+    width: max-content;
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
+    margin-top: 40px;
+  }
+  
+  .portfolio-banner .btn2:hover {
+    background-color: #6c6c6c;
+    color: var(--white);
+    border: 1px solid #6d6d6d;
+  }
+  /* -------------- Portfolio Banner End ---------------- */
+  
+  
+  /* -------------- Portfolio Footer End ---------------- */
+  .portfolio-footer {
+    color: var(--white100);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 100px 50px;
+    border-radius: 36px;
+    text-align: center;
+    max-width: 1280px;
+    margin: auto;
+    border: 1px solid var(--white10);
+    background-image: url(/image/portfolio/footerback.svg);
+    background-position: 200% 110%;
+    background-repeat: no-repeat;
+  
+  }
+  
+  .portfolio-footer-sm-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .portfolio-footer h1{
+    color: var(--white100);
+  }
+  .portfolio-footer p{
+    color: var(--white100);
+  
+  }
+  .portfolio-footer h6{
+    color: var(--white100);
+    margin: 0px 0;
+    margin-top: 80px;
+  
+  }
+  
+  .portfolio-social{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--white100);
+  }
+  .portfolio-social:hover{
+    color: var(--white80);
+  }
+  
+  
+  .portfolio-end{
+    margin-top: 100px;
+    text-align: center;
+  }
+  .portfolio-end img{
+    opacity: 0.5;
+    max-width: 1000px;
+    padding-bottom: 20px;
+  }
+  
