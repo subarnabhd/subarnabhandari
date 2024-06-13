@@ -11,7 +11,7 @@ const Youtube = () => {
           <div className="flex flex-col justify-center items-center gap-4 p-10">
               <Image className='p-0' src="/link/youtube.webp" alt='' height={60} width={60} ></Image>
 
-              <h2 className='text-2xl font-bold text-center'>Subscribe us on Youtube</h2>
+              <h2 className='text-3xl font-bold text-center'>Subscribe us on Youtube</h2>
               <p className='text-sm color-white80 text-center'>Subscribe Now amd press the bell button </p>
 
 
