@@ -11,18 +11,23 @@ const Homebanner = () => {
     const handleScroll = () => {
       const scroll = window.scrollY;
       const cHomeElement = document.querySelector('.c-home') as HTMLElement;
+      
 
       if (cHomeElement) {
         const scale = 1 - scroll / 1000;
-        if (scale >= 0.77) {
+        if(scale == 1){
+          cHomeElement.style.transform = `scale(1)`;
+          cHomeElement.style.borderRadius = '0px';
+        } else if (scale >= 0.77){
           cHomeElement.style.transform = `scale(${scale})`;
           cHomeElement.style.borderRadius = `0 0 38px 38px`; // Apply border radius when scaled
           setIsScaled(false);
-        } else {
+        } else{
           if (isScaled) {
             cHomeElement.style.borderRadius = '0'; // Reset border radius
           }
         }
+        
       }
     };
 
