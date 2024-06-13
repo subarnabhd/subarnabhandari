@@ -30,7 +30,17 @@ const page = () => {
       <Boxgallery />
       <GoodDesign />
       <Hire />
-      <ClientSlider />
+      <div className='bg-white py-20'>
+          <div className="container m-auto flex justify-center items-center" >
+            <div>
+              <h2 className='text-black font-bold text-lg w-max'>Trusted by:</h2>
+
+            </div>
+            <ClientSlider />
+
+          </div>
+        </div>
+
 
     </main>
   )

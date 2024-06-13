@@ -8,24 +8,24 @@ const studio = () => {
   return (
     <main>
 
-    <Studiobanner />
+      <Studiobanner />
 
-    <div id="aboutstudio" className=" color-black100 flex flex-col items-center justify-center text-6xl font-bold gap-5  py-[200px] w-header bg-white">
-      <h1 className="flex text-gray-400">
-        <p className="text-black">Studio</p>
-        <b>.</b>Creating the brands
-      </h1>
-      <h1 className="text-gray-400">
-        that people <b>Love.</b>
-      </h1>
-    </div>
-    <Aboutstudio />
+      <div id="aboutstudio" className=" color-black100 flex flex-col items-center justify-center text-6xl font-bold gap-5  py-[200px] w-header bg-white">
+        <h1 className="flex text-gray-400">
+          <p className="text-black">Studio</p>
+          <b>.</b>Creating the brands
+        </h1>
+        <h1 className="text-gray-400">
+          that people <b>Love.</b>
+        </h1>
+      </div>
+      <Aboutstudio />
 
-    <div className="bg-black  py-20 flex flex-col gap-5">
+
       <div className="container m-auto flex flex-col gap-5 ">
         <div>
-        <h2 className="site-h">Services We Provide</h2>
-        <p className="site-p">Transform your business idea with us</p></div>
+          <h2 className="site-h">Services We Provide</h2>
+          <p className="site-p">Transform your business idea with us</p></div>
 
 
 
@@ -64,56 +64,65 @@ const studio = () => {
 
 
         <div className=" py-[200px] border-t border-gray-950">
-            <div className="container  flex flex-col gap-10">
-                <h1 className="site-h">The Tale of TSS</h1>
-                <p className="site-p">
-                  We create experiences based on UX best practices, market research,
-                  branding, and user testing that leads to products that make real
-                  success. The Subarna Studio has the capabilities of designing
-                  conventional web and mobile applications and the solutions built
-                  using cutting-edge technologies.
+          <div className="container  flex flex-col gap-10">
+            <h1 className="site-h">The Tale of TSS</h1>
+            <p className="site-p">
+              We create experiences based on UX best practices, market research,
+              branding, and user testing that leads to products that make real
+              success. The Subarna Studio has the capabilities of designing
+              conventional web and mobile applications and the solutions built
+              using cutting-edge technologies.
+            </p>
+            <div className=" flex gap-4 w-11/12 m-auto">
+              <div className="site-box flex flex-col gap-7 p-10">
+                <Image src="/studio/values-1.webp" className="m-auto" alt="..." width={80} height={100}></Image>
+                <h4 className="text-2xl bold">Ownership</h4>
+                <p className="text-base color-white80">
+                  Each TSS owns the processes and goes beyond their tasks to
+                  ensure the growth and success of Expedite.
                 </p>
-              <div className=" flex gap-4 w-11/12 m-auto">
-                <div className="site-box flex flex-col gap-7 p-10">
-                  <Image src="/studio/values-1.webp" className="m-auto" alt="..." width={80} height={100}></Image>
-                  <h4 className="text-2xl bold">Ownership</h4>
-                  <p className="text-base color-white80">
-                    Each TSS owns the processes and goes beyond their tasks to
-                    ensure the growth and success of Expedite.
-                  </p>
-                </div>
-                <div className="site-box flex flex-col gap-7 p-10">
-                  <Image src="/studio/sun.webp" className="m-auto" alt="..." width={80} height={100}></Image>
-                  <h4 className="text-2xl bold">Can-Do Attitude</h4>
-                  <p className="text-base color-white80">
-                    TSS possess a can-do attitude and serve their tasks whole
-                    heartedly by thinking out of the box.
-                  </p>
-                </div>
-                <div className="site-box flex flex-col gap-7 p-10">
-                  <Image src="/studio/format-circle.webp" className="m-auto" alt="..." width={80} height={100}></Image>
-                  <h4 className="text-2xl bold">Growth Mindset</h4>
-                  <p className="text-base color-white80">
-                    TSS are persistent towards their goals and responsibilities
-                    despite any hurdles they might face.
-                  </p>
-                </div>
+              </div>
+              <div className="site-box flex flex-col gap-7 p-10">
+                <Image src="/studio/sun.webp" className="m-auto" alt="..." width={80} height={100}></Image>
+                <h4 className="text-2xl bold">Can-Do Attitude</h4>
+                <p className="text-base color-white80">
+                  TSS possess a can-do attitude and serve their tasks whole
+                  heartedly by thinking out of the box.
+                </p>
+              </div>
+              <div className="site-box flex flex-col gap-7 p-10">
+                <Image src="/studio/format-circle.webp" className="m-auto" alt="..." width={80} height={100}></Image>
+                <h4 className="text-2xl bold">Growth Mindset</h4>
+                <p className="text-base color-white80">
+                  TSS are persistent towards their goals and responsibilities
+                  despite any hurdles they might face.
+                </p>
               </div>
             </div>
           </div>
-          <div className="a-approach">
+        </div>
+        <div className="a-approach">
           <h1 className="site-h">Our Approach</h1>
-                <p className="site-p">
-                As a full-service UI UX design agency, we work with our clients to discover, define, design and develop web & mobile user experiences that add value and get you close to the ultimate goal. What would the ultimate success of your project look like? Asking the question at the beginning of each project allows us to be laser-focused throughout the entire design process.
-                </p>
+          <p className="site-p">
+            As a full-service UI UX design agency, we work with our clients to discover, define, design and develop web & mobile user experiences that add value and get you close to the ultimate goal. What would the ultimate success of your project look like? Asking the question at the beginning of each project allows us to be laser-focused throughout the entire design process.
+          </p>
+        </div>
+        <div className='py-20'>
+          <div className="container m-auto flex justify-center items-center" >
+            <div>
+              <h2 className='text-white font-bold text-lg w-max'>Trusted by:</h2>
+
+            </div>
+            <ClientSlider />
+
           </div>
-          <ClientSlider/>
-     
+        </div>
+
 
       </div>
-    </div>
 
-  </main>
+
+    </main>
   )
 }
 

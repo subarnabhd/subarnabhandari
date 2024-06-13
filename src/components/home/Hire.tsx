@@ -14,7 +14,7 @@ const Hire = () => {
                         <p>but need an identity to start with?</p>
                         <p>I love ideas because I believe in them.</p>
                         <p>Let's discuss your idea.</p>
-                         <Link type="button" className="primary-btn my-5" href="/contact">HIRE</Link>
+                         <Link type="button" className="yes-button" href="/contact">HIRE</Link>
 
        
                    
