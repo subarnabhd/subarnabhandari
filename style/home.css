@@ -1,0 +1,135 @@
+/* ------------- */
+.home-banner,
+.studio-banner {
+  min-height: calc(100vh - 64px);
+}
+
+.c-home {
+  background-color: black;
+  background-image: url("/home/grid.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 1600px auto;
+  display: grid;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 64px);
+  padding: 50px;
+  transform: translate3d(100, 0, 0) scale(0, 0);
+}
+
+.home-banner .home-link a {
+  color: #ffffff5a;
+  align-content: center;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.home-banner .home-link a:hover {
+  color: var(--primary);
+}
+
+.home-banner span {
+  font-size: 64pxpx;
+  font-weight: 300;
+}
+
+.link-left {
+  z-index: 5;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  bottom: 580px;
+  left: -238px;
+  transform: rotate(-90deg) translate(-50%, 0);
+  gap: 30px;
+}
+
+.link-right {
+  z-index: 5;
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  bottom: 230px;
+  right: -60px;
+  transform: rotate(-90deg) translate(-50%, 0);
+  gap: 30px;
+}
+
+.link-left ul,
+.link-right ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  color: white !important;
+  text-transform: uppercase;
+}
+
+.link-line {
+  background-color: #f5f5f7;
+  height: 1px;
+  width: 100px;
+}
+
+.link-left li a,
+.link-right li a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+  color: #f5f5f7 !important;
+}
+
+.link-left li a::after,
+.link-right li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link-left li a:hover::after,
+.link-left li a:focus::after,
+.link-right li a:hover::after {
+  color: var(--white100);
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.link-center {
+  z-index: 5;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  bottom: 0;
+  left: 50% !important;
+  gap: 30px;
+}
+
+.link-center .link-line {
+  width: 1px;
+  height: 60px;
+}

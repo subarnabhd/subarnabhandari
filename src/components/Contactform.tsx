@@ -62,7 +62,7 @@ const Contactform = () => {
           ></textarea>
                <button
           type="submit"
-          className="text-white bg-secondary-500 hover-bg-secondary-400 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800"
+          className="text-white primary-btn uppercase"
         >
           Submit
         </button>
