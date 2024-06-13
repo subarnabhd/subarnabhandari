@@ -1,0 +1,229 @@
+/* ------Timeline---------- */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+  }
+  ul.timeline:before {
+    content: " ";
+    background: #343434;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+  }
+  ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  ul.timeline > li:before {
+    content: " ";
+    background: rgb(0, 0, 0);
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid var(--primary-hover);
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+  }
+  
+  /* ------Timeline---------- */
+  
+  .cv-container{
+    border-bottom: 5px solid var(--primary-hover);
+  }
+  .cv h4 {
+    color: var(--white100) !important;
+    font-weight: 300;
+    font-size: 24px;
+  }
+  .cv-header-container {
+    justify-content: space-between;
+    margin: 50px 0 25px 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .cv-down{
+    text-align: right;
+  }
+  
+  .cv-head-box{
+    display: flex;
+    gap: 25px;
+  }
+  .cv-header img {
+    height: 140px;
+    border-radius: 100px;
+  }
+  .cv-overview p{ 
+    color: var(--white95);
+    padding: 0 20px;
+  
+  }
+  .cv {
+    max-width: 800px;
+    margin: auto;
+  }
+  .cv-name {
+    font-size: 28px;
+    color: var(--white100);
+    font-weight: 400;
+  }
+  .cv-button {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--white95);
+    background-color: var(--white20);
+    padding: 9px 18px;
+    border-radius: 100px;
+    width: max-content;
+    margin-top: 8px;
+  }
+  .cv-button:hover {
+    color: var(--black100);
+    background-color: var(--white100);
+  }
+  
+  /* ------Experience---------- */
+  
+  .cvcard {
+    background-color: var(--white10);
+    width: -webkit-fill-available;
+    border-radius: 20px;
+    border: 1px solid var(--white15);
+    padding: 30px;
+    margin: 10px 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cvcard:hover {
+    background-color: var(--white15);
+  }
+  
+  .cv-logo img {
+    padding: 5px;
+    height: 80px;
+    width: 80px;
+    /* object-fit: cover; */
+    background-color: var(--white10);
+    border-radius: 100px;
+    border: 1px solid var(--white15);
+  }
+  .cvcard-container {
+    justify-content: space-between;
+  }
+  .cv-details {
+    color: var(--white90);
+    width: auto;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+  
+  .cv-details-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .cv-detail{
+    color: var(--white90);
+  
+  }
+  .cv-company {
+    color: var(--white100);
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .cv-dot {
+    color: var(--white40);
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .cv-position {
+    color: var(--white90);
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .cv-timeline {
+    color: var(--white90);
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .cv-location {
+    color: var(--white90);
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+  }
+  .cv-description {
+    margin-top: 15px;
+    color: var(--white80);
+    font-size: 16px;
+    font-weight: 200;
+  }
+  
+  /* ------Experience---------- */
+  
+  #language span {
+    color: var(--white60);
+    margin-left: 5px;
+    font-size: 12px;
+  }
+  #contact ul {
+    color: var(--white80);
+    font-size: 16px;
+    font-weight: 200;
+    display: flex;
+    gap: 10px 50px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style-type: none;
+  }
+  #contact li {
+    text-decoration: none !important;
+    color: var(--white80);
+  }
+  #contact ul a {
+    text-decoration: none;
+    color: var(--white100);
+  }
+  #contact ul a:hover {
+    text-decoration: none;
+    color: var(--primary);
+  }
+  
+  #language ul {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #toolsUse a {
+    font-weight: 500;
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 100px;
+    border: 1px solid var(--white30);
+  }
+  #toolsUse a:hover {
+    background-color: var(--white100);
+    color: var(--black100);
+  }
+  #toolsUse .cv-description {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
