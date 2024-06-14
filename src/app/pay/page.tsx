@@ -2,7 +2,11 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main>Pay</main>
+    <main>
+      <div className="conatiner m-auto py-20">
+        Pay.
+      </div>
+    </main>
   )
 }
 

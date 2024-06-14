@@ -17,7 +17,7 @@ const Whychoose = () => {
                     <Link href="/contact" type="button">Let’s do a small test together</Link>
 
                     <p>Agree or disagree with any of the above?</p>
-                    <Link className="primary-btn w-max" type="button" target="_blank" href="/contact">Send Your honest feedback</Link>
+                    <Link className="primary-btn w-max" type="button" href="/contact">Send Your honest feedback</Link>
                     </div>
                 <div>
 
