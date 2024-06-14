@@ -10,7 +10,7 @@ import "/style/header.css";
 import "/style/tools.css";
 import "/style/globals.css";
 import "/style/studio.css";
-import { Providers } from "./providers";
+import { Providers } from "../providers";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Copywrite from "@/components/footer/Copywrite";
