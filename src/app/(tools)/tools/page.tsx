@@ -9,7 +9,6 @@ const tools = () => {
 
   return (
     <main>
-      <Toolshead />
       <div className="container m-auto">
 
         <div className="flex gap-5 py-5">

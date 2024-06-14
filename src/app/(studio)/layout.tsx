@@ -11,8 +11,8 @@ import "/style/tools.css";
 import "/style/globals.css";
 import "/style/studio.css";
 import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
 import Copywrite from "@/components/footer/Copywrite";
+import Studiofooter from "@/components/footer/Studiofooter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={inter.className}>
           <Header />
           {children}
-          <Footer />
+          <Studiofooter/>
           <Copywrite />
       </body>
     </html>

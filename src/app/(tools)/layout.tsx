@@ -10,8 +10,7 @@ import "/style/header.css";
 import "/style/tools.css";
 import "/style/globals.css";
 import "/style/studio.css";
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import Toolshead from "@/components/header/Toolshead";
 import Copywrite from "@/components/footer/Copywrite";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -29,9 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-          <Header />
+          <Toolshead/>
           {children}
-          <Footer />
+
           <Copywrite />
       </body>
     </html>

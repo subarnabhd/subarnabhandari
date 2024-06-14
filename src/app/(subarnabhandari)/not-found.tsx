@@ -2,7 +2,16 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from 'next/link';import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "/style/contact.css";
+import "/style/blog.css";
+import "/style/home.css";
+import "/style/link.css";
+import "/style/portfolio.css";
+import "/style/cv.css";
+import "/style/header.css";
+import "/style/globals.css";
 
 const NotFoundPage = () => {
   const goBack = () => {
@@ -10,7 +19,8 @@ const NotFoundPage = () => {
   };
 
   return (
-    <main className='flex flex-col text-center align-middle py-20 gap-5 justify-center items-center' >
+    <main className='flex flex-col text-center align-middle py-20 gap-5 justify-center items-center h-screen bg-black' >
+      <div>
       <Image className='m-auto' src="/404.jpg" alt="404 Image" width={400} height={200} />
       <h1 className="text-4xl font-bold">Whoops...!</h1>
       <p className='color-white70'>
@@ -18,6 +28,7 @@ const NotFoundPage = () => {
       </p>
         <Link className='yes-button w-max m-auto' href="/">subarnabhandari.com
         </Link>
+        </div>
     </main>
   );
 };
