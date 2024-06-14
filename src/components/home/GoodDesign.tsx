@@ -1,10 +1,9 @@
-"use client"
+"use client";
+
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from "react";
 import Slider from "react-slick";
-
 
 interface SlideProps {
   src: string;
@@ -22,6 +21,7 @@ const Slide: React.FC<SlideProps> = ({ src, href }) => (
 interface SliderProps {
   slides: SlideProps[];
 }
+
 const settings = {
   dots: false,
   infinite: true,
@@ -35,36 +35,29 @@ const settings = {
   arrows: false,
   responsive: [
     {
-      breakpoint: 1140,
+      breakpoint: 1540,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 5,
       },
     },
   ],
 };
 
 const Designs: React.FC<SliderProps> = ({ slides }) => (
-
-  <div className="good-design text-center py-20 bg-white w-header">
-
+  <div className="good-design bg-white">
     <h2 className="site-h text-black">Striving to create elegant & effortless designs.</h2>
     <p className="text-lg color-black55">Unlimited possibility to reach out. Create your own brand with Subarna.</p>
 
-    <div className=" flex gap-2 pt-10 overflow-x-hidden">
-
+    <div className="flex gap-2 pt-10 overflow-x-hidden">
       <Slider {...settings}>
-
         {slides.map(({ src, href }, index) => (
-          <div>
-            <img className='=' src={src} alt="" />
+          <div key={index}>
+            <Image src={src} alt={`Slide ${index + 1}`} height={500} width={500} />
           </div>
         ))}
-
       </Slider>
-
-    </div >
-
-  </div >
+    </div>
+  </div>
 );
 
 const App: React.FC = () => {

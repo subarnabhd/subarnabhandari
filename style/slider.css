@@ -2,23 +2,29 @@
 
 .good-design .slick-track {
   display: flex;
-  gap: 40px;
+  /* gap: 40px; */
   position: relative;
 }
 .good-design .slick-slide {
-  height: 350px !important;
-  width: 350px !important;
+  display: flex;
+  gap:20px;
+  width: 100%;
   border: 1px solid var(--black15);
   border-radius: 12px;
   overflow: hidden;
   background-color: red;
 }
-.good-design .slick-slide img {
-  height: 350px !important;
-  width: 350px !important;
+.good-design  img {
+  height: 500px !important;
+  width: 500px !important;
   background-color: green;
 }
-
+.good-design .slick-slide {
+  width: 500px!important;
+}
+.good-design .slick-track {
+  width: 500px!important;
+}
 
 /* ----------------------------------------- */
 .client-slide .swiper-wrapper {

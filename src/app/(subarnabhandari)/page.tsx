@@ -14,7 +14,7 @@ const page = () => {
   return (
     <main>
       <Homebanner />
-      <div className="text-5xl  bg-[#F5F5F7] pb-20 font-extrabold w-header flex">
+      <div className=" text-5xl  bg-[#F5F5F7] pb-20 font-extrabold w-header flex">
 
         <Link className="color-black20 hover-color-black40 m-auto flex gap-4" href="mailto:hello@subarnabhandari.com"><FaRegPaperPlane />hello@subarnabhandari.com</Link>
       </div>
@@ -28,13 +28,12 @@ const page = () => {
       </div>
       <Whychoose />
       <Boxgallery />
-      <GoodDesign />
+      {/* <GoodDesign /> */}
       <Hire />
 
-    <div className='bg-white'>
-            <ClientSlider />
-
-            </div>
+      <div className='bg-white'>
+        <ClientSlider />
+      </div>
 
 
     </main>
