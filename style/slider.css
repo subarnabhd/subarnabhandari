@@ -49,9 +49,8 @@
 .studio-c-slide h2{
   color: white!important;
 }
-.studio-c-slide
-.client-slide::before,
-.client-slide::after {
+.studio-c-slide .client-slide::before,
+.studio-c-slide .client-slide::after {
   background: linear-gradient(to right, #000000 0%, rgba(255, 255, 255, 0) 100%)!important;
 
 }
