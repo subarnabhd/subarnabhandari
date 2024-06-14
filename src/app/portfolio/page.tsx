@@ -189,15 +189,15 @@ const page = () => {
 
         <div className=" bg-[#001d26] rounded-2xl overflow-hidden my-10 flex justify-between">
           <div className='p-10 w-max p-col-1'>
-            <h2 className='flex text-3xl font-bold'>Portfolio<b>.</b> <p>Subarna</p></h2>
-            <p>Hire Subarna for the best design experience.</p>
-            <div className='flex pt-10'>
-              <Link className="btn1" href="https://subarnabhandari.com/contact">Hire</Link>
-              <Link className="btn2" href="https://subarnabhandari.com/">Message</Link></div>
+            <h2 className='flex text-3xl font-bold items-baseline gap-1 pb-3'>Portfolio<b>.</b> <p className='text-xl font-light'>Subarna</p></h2>
+            <p className='color-white70'>Hire Subarna for the best design experience.</p>
+            <div className='flex pt-10 items-center gap-2'>
+              <Link className="py-2 px-4 rounded-full bg-slate-600 flex items-center hover:bg-black text-sm" href="/contact">Hire</Link>
+              <Link className="py-2 px-4 rounded-full  flex items-center hover:bg-black text-sm" href="/contact">Message</Link></div>
           </div>
           <div className='p-col-2 w-1/2'>
             <div className='flex justify-end '>
-              <Image className='bg-[#001d26] rounded-2xl p-4' src="/home/icon.webp" height={75} width={206} alt=''></Image>
+              <Image className='bg-[#001d26] rounded-2xl p-4' src="/home/icon.webp" height={75} width={75} alt=''></Image>
             </div>
           </div>
         </div>
