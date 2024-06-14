@@ -113,8 +113,9 @@ const studio = () => {
               <h2 className='text-white font-bold text-lg w-max'>Trusted by:</h2>
 
             </div>
+          
             <ClientSlider />
-
+   
           </div>
         </div>
 

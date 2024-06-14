@@ -1,8 +1,31 @@
+"use client"
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import Slider from 'react-slick';
 
+const settings = {
+  dots: false,
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 5000,
+  autoplaySpeed: 5000,
+  cssEase: "linear",
+  pauseOnHover: false,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1540,
+      settings: {
+        slidesToShow: 5,
+      },
+    },
+  ],
+};
 const ClientSlider = () => {
+
   const clients = [
     { link: 'https://www.goldenmudcreation.com/', imageSrc: '/client/goldenmudcreation.webp', alt: 'Goldenmud Creation' },
     { link: 'https://www.facebook.com/gwnofficial/', imageSrc: '/client/ghostwritingnepal.webp', alt: 'Ghost Writing Nepal' },
@@ -48,13 +71,28 @@ const ClientSlider = () => {
   ];
 
   return (
-    <div className="flex px-2 overflow-x-scroll gap-2">
-      {clients.map((client, index) => (
-        <Link key={index} href={client.link} target="_blank">
-          <Image src={client.imageSrc} alt={client.alt} width={200} height={200} />
-        </Link>
-      ))}
+    <div className='bg-white py-20'>
+
+      <div className="container m-auto flex justify-center items-center" >
+        <div>
+          <h2 className='text-black font-bold text-lg w-max'>Trusted by:</h2>
+        </div>
+
+      <div className='relative w-11/12'>
+        <div className="client-slide flex px-2 overflow-x-scroll gap-2">
+          <Slider {...settings}>
+            {clients.map((client, index) => (
+              <Link key={index} href={client.link} target="_blank">
+                <Image src={client.imageSrc} alt={client.alt} width={400} height={400} />
+              </Link>
+            ))}
+          </Slider>
+        </div>
+      </div>
+      </div>
+
     </div>
+
   );
 };
 

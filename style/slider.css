@@ -1,0 +1,99 @@
+
+
+.good-design .slick-track {
+  display: flex;
+  gap: 40px;
+  position: relative;
+}
+.good-design .slick-slide {
+  height: 350px !important;
+  width: 350px !important;
+  border: 1px solid var(--black15);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: red;
+}
+.good-design .slick-slide img {
+  height: 350px !important;
+  width: 350px !important;
+  background-color: green;
+}
+
+
+/* ----------------------------------------- */
+.client-slide .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.client-slide::before,
+.client-slide::after {
+  background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+
+.client-slide::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+
+.client-slide::before {
+  left: 0;
+  top: 0;
+}
+
+/* .client-slide::before,
+.client-slide::after {
+  background: linear-gradient(to right, #000000 0%, rgba(255, 255, 255, 0) 100%)!important;
+
+} */
+
+
+/* Slider End */
+
+
+
+
+.client-slide .slick-initialized {
+  position: relative;
+  /* height: 400px; */
+  width: 100vw;
+}
+
+.client-slide .slick-list::-webkit-scrollbar {
+  display: none;
+}
+
+.client-slide .slick-track {
+  display: flex;
+  gap: 5px;
+  position: relative;
+}
+.client-slide  .slick-slide {
+  height: 80px !important;
+  width: 150px !important;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.client-slide .slick-slide img {
+  height: auto !important;
+  width: 100% !important;
+  max-height:70px ;
+}
+
+.client-slide .slick-initialized {
+  position: relative;
+  /* height: 400px; */
+  width: 100vw;
+}
+
+.client-slide .slick-list::-webkit-scrollbar {
+  display: none;
+}
