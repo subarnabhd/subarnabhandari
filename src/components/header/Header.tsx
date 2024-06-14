@@ -63,36 +63,37 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <div className="s-header" id="s-header">
-      <div className="container flex m-auto items-center justify-between">
+    <div className="s-header " id="s-header">
+      <div className="container flex m-auto items-center justify-between px-4">
         <Link className="s-header-logo" href="/">
           {/* Add your logo here */}
         </Link>
 
-        <div className="hidden w-full md:block md:w-auto px-10" id="navbar-default">
-          <ul className="s-header-nav font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x rtl:space-x-reverse md:mt-0 md:border-0">
-            <li>
-              <Link href="/" className="s-header-link">Home</Link>
-            </li>
-            <li>
-              <Link href="/about" className="s-header-link">About</Link>
-            </li>
-            <li>
-              <Link href="/studio" className="s-header-link">Studio<b>.</b></Link>
-            </li>
-            <li>
-              <Link href="/portfolio" className="s-header-link">Portfolio</Link>
-            </li>
-            <li>
-              <Link href="/contact" className="s-header-link">Contact</Link>
-            </li>
-          </ul>
-        </div>
 
+        <ul className="s-header-nav font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x rtl:space-x-reverse md:mt-0 md:border-0">
+          <li>
+            <Link href="/" className="s-header-link">Home</Link>
+          </li>
+          <li>
+            <Link href="/about" className="s-header-link">About</Link>
+          </li>
+          <li>
+            <Link href="/studio" className="s-header-link">Studio<b>.</b></Link>
+          </li>
+          <li>
+            <Link href="/portfolio" className="s-header-link">Portfolio</Link>
+          </li>
+          <li>
+            <Link href="/contact" className="s-header-link">Contact</Link>
+          </li>
+        </ul>
         <Link className="s-header-menu text-blue-500 hover:underline" href="/" onClick={handleMenuClick}>
           {/* Add menu icon here if needed */}
         </Link>
+
       </div>
+
+
 
       {isPopupOpen && (
         <div className="menu absolute z-50 h-screen w-full bg-black">

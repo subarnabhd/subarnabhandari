@@ -133,8 +133,6 @@ const Social = () => {
 
                         <Image src="/link/clubhouse.webp" height={60} width={60} alt=''></Image>
                         <p className="c1name">Clubhouse</p>
-
-
                     </Link>
 
                 </div>
