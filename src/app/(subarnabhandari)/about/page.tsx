@@ -49,7 +49,6 @@ const AboutPage = () => {
             <Link className="border-btn" href="/cv">View Resume</Link>
           </div>
         </div>
-        <GoodDesign/>
       </main>
     </>
   )
