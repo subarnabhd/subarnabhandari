@@ -107,18 +107,11 @@ const studio = () => {
             As a full-service UI UX design agency, we work with our clients to discover, define, design and develop web & mobile user experiences that add value and get you close to the ultimate goal. What would the ultimate success of your project look like? Asking the question at the beginning of each project allows us to be laser-focused throughout the entire design process.
           </p>
         </div>
-        <div className='py-20'>
-          <div className="container m-auto flex justify-center items-center" >
-            <div>
-              <h2 className='text-white font-bold text-lg w-max'>Trusted by:</h2>
-
-            </div>
-          
+       
+          <div className="studio-c-slide">
             <ClientSlider />
-   
-          </div>
-        </div>
-
+            </div>
+  
 
       </div>
 

@@ -31,9 +31,10 @@ const page = () => {
       <GoodDesign />
       <Hire />
 
+    <div className='bg-white'>
             <ClientSlider />
 
-     
+            </div>
 
 
     </main>

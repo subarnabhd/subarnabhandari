@@ -71,7 +71,7 @@ const ClientSlider = () => {
   ];
 
   return (
-    <div className='bg-white py-20'>
+    <div className='py-20'>
 
       <div className="container m-auto flex justify-center items-center" >
         <div>
