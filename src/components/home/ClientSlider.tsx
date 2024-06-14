@@ -79,7 +79,7 @@ const ClientSlider = () => {
         </div>
 
       <div className='relative w-11/12'>
-        <div className="client-slide flex px-2 overflow-x-scroll gap-2">
+        <div className="client-slide flex  overflow-x-hidden">
           <Slider {...settings}>
             {clients.map((client, index) => (
               <Link key={index} href={client.link} target="_blank">

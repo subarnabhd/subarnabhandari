@@ -35,9 +35,9 @@ const settings = {
   arrows: false,
   responsive: [
     {
-      breakpoint: 1540,
+      breakpoint: 1140,
       settings: {
-        slidesToShow: 5,
+        slidesToShow: 2,
       },
     },
   ],
@@ -50,13 +50,13 @@ const Designs: React.FC<SliderProps> = ({ slides }) => (
     <h2 className="site-h text-black">Striving to create elegant & effortless designs.</h2>
     <p className="text-lg color-black55">Unlimited possibility to reach out. Create your own brand with Subarna.</p>
 
-    <div className=" flex gap-2 pt-10 overflow-x-scroll">
+    <div className=" flex gap-2 pt-10 overflow-x-hidden">
 
       <Slider {...settings}>
 
         {slides.map(({ src, href }, index) => (
           <div>
-            <img className='h-[300px] w-[300px] relative' src={src} alt="" />
+            <img className='=' src={src} alt="" />
           </div>
         ))}
 
