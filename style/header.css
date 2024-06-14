@@ -25,14 +25,29 @@
   height: 25px;
   background-image: url(/logo.svg);
   background-size: contain;
+  background-position: center center;
   background-repeat: no-repeat;
 }
-.s-header-logo,.s-header-menu:hover {
+.s-header-logo:hover {
+ background-size: 90%;
   opacity: 0.8;
 }
-.s-header-logo,.s-header-menu:active {
-  opacity: 1;
-}
+
+.s-header-menu:hover {
+  background-size: 90%;
+   opacity: 0.8;
+ }
+ .s-header-logo:active {
+  background-size: 98%;
+   opacity: 1;
+ }
+ 
+ .s-header-menu:active {
+   background-size: 98%;
+    opacity: 1;
+  }
+
+
 .minimal .s-header-logo {
   background-image: url(/logo-black.svg);
 }
@@ -41,6 +56,7 @@
   height: 24px;
   background-image: url(/menu.svg);
   background-size: contain;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 .minimal .s-header-menu {

@@ -9,6 +9,7 @@ import Homebanner from '@/components/home/Homebanner'
 import Whychoose from '@/components/home/Whychoose'
 import ClientSlider from '@/components/home/ClientSlider'
 import GoodDesign from '@/components/home/GoodDesign'
+import Logoslide from '@/components/home/Logoslide'
 
 const page = () => {
   return (
@@ -29,6 +30,7 @@ const page = () => {
       <Whychoose />
       <Boxgallery />
       <GoodDesign />
+      <Logoslide/>
       <Hire />
       <div className='bg-white py-20'>
           <div className="container m-auto flex justify-center items-center" >

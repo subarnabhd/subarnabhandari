@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+
 interface SlideProps {
   src: string;
   href: string;
@@ -31,6 +32,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => (
         <Slide key={index} {...slide} />
       ))}
     </div>
+
   </div>
 );
 
