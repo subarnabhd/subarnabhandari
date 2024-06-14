@@ -2,75 +2,69 @@ import React from "react";
 
 const Contactform = () => {
   return (
-    <div>
-      <form className="max-w-sm mx-auto">
-        <div className="flex flex-col gap-5">
-          <select
-            id="countries"
-           className="v-input"
-          >
-            <option value="" selected disabled>
-              how can we help you?*
-            </option>
-            <option value="I need help with my vhandar order">
-              I need help with my vhandar order
-            </option>
-            <option value="I want to partner with vhandar">
-              I want to partner with vhandar
-            </option>
-            <option value="I found incorrect/ outdated information on a page">
-              I found incorrect/ outdated information on a page
-            </option>
-            <option value="The website is not working the way it should">
-              The website is not working the way it should
-            </option>
-            <option value="The app is not working the way it should">
-              The app is not working the way it should
-            </option>
-            <option value="I would like to give feedback/ suggestions">
-              I would like to give feedback/ suggestions
-            </option>
-            <option value="Other">Other</option>
-          </select>
+    <form className="justify-start max-w-md  flex flex-col gap-3">
+        <div>
+          <label className="s-label">Your Name</label>
           <input
             type="text"
             id="name"
-             className="v-input"
+            className="s-input"
             placeholder="Your Good Name"
             required
           />
+        </div>
+        <div>
+          <label className="s-label">Email Address</label>
 
           <input
             type="email"
             id="email"
-             className="v-input"
+            className="s-input"
             placeholder="Email Address"
             required
           />
+        </div>
+        <div>
+          <label className="s-label">Phone Number</label>
+
           <input
             type="tel"
             id="tel"
-              className="v-input"
+            className="s-input"
             placeholder="Phone Number"
             required
           />
+        </div>
+        <div>
+          <label className="s-label">What services are you looking for?</label>
+
+          <select id="countries" className="s-input">
+            <option value="" selected disabled>
+              What services are you looking for?
+            </option>
+            <option value="UX Design">UX Design</option>
+            <option value="Development">Development</option>
+            <option value="Branding">Branding</option>
+            <option value="Branding">SEO</option>
+            <option value="Motion Design">Motion Design</option>
+            <option value="Wordpress">Wordpress</option>
+            <option value="Consulting">Consulting</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+        <div>
+          <label className="s-label">Tell us in Brief</label>
           <textarea
             id="message"
             // rows="4"
-             className="v-input"
-            placeholder="Leave a comment..."
+            className="s-input"
+            placeholder="Message / Project Details"
           ></textarea>
-               <button
-          type="submit"
-          className="text-white primary-btn uppercase"
-        >
+        </div>
+        <button type="submit" className="text-white primary-btn uppercase">
           Submit
         </button>
-        </div>
-
-   
-      </form>
-    </div>
+    </form>
   );
 };
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import "/style/contact.css";
 import "/style/blog.css";
 import "/style/home.css";
 import "/style/link.css";
@@ -30,11 +31,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-        <Header/>
-
-        {children}
-        <Footer/>
-        <Copywrite/>
+          <Header />
+          {children}
+          <Footer />
+          <Copywrite />
         </Providers>
       </body>
     </html>
