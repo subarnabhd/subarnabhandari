@@ -197,47 +197,10 @@ const page = () => {
           </div>
           <div className='p-col-2 w-1/2'>
             <div className='flex justify-end '>
-              <Image className='bg-[#001d26] rounded-2xl p-4' src="/home/icon.webp" height={75} width={75} alt=''></Image>
+              <Image className='bg-[#001d26] rounded-2xl p-4' src="/home/icon.webp" height={75} width={206} alt=''></Image>
             </div>
           </div>
         </div>
-
-
-       
-        {/* <div className="portfolio-footer">
-          <h1>Let's make something great together.</h1>
-          <div className="portfolio-footer-sm-container">
-            <p>Have a project or want to talk? Say</p>
-            <Link
-              className="primary-btn"
-              href="mailto:hello@subarnabhandari.com"
-              target="_blank"
-            >hello@subarnabhandari.com</Link>
-          </div>
-          <h6>SAY HELLO!</h6>
-          <div className="portfolio-footer-sm-container">
-            <Link
-              className="portfolio-social"
-              href="https://www.linkedin.com/in/subarnabhd"
-              target="_blank"
-            >Linkedin</Link>
-            <Link
-              className="portfolio-social"
-              href="https://facebook.com/subarnabhd"
-              target="_blank"
-            >Facebook</Link>
-            <Link
-              className="portfolio-social"
-              href="https://instagram.com/subarnabhd"
-              target="_blank"
-            >Instagram</Link>
-            <Link
-              className="portfolio-social"
-              href="https://behance.net/subarnabhd"
-              target="_blank"
-            >Behance</Link>
-          </div>
-        </div> */}
 
         <div className="portfolio-end">
           <Image className='m-auto' src="/portfolio/portfoliotext.png" height={1000} width={1000} alt=''></Image>
