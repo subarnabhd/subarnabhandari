@@ -111,27 +111,28 @@ const Header: React.FC = () => {
             <div className="modal-body text-white flex">
               <div className="left">
                 <ul>
-                  <li><Link href="/index" className="modal-dot">Home</Link></li>
-                  <li><Link href="/about" className="modal-dot">About</Link></li>
-                  <li><Link href="/studio" className="modal-dot">Studio<b>.</b></Link></li>
-                  <li><Link href="/portfolio" className="modal-dot">Portfolio</Link></li>
-                  <li><Link href="/contact" className="modal-dot">Contact</Link></li>
+                  <li><Link href="/" onClick={handleClosePopup} className="modal-dot">Home</Link></li>
+                  <li><Link href="/about" onClick={handleClosePopup} className="modal-dot">About</Link></li>
+                  <li><Link href="/studio" onClick={handleClosePopup} className="modal-dot">Studio<b>.</b></Link></li>
+                  <li><Link href="/portfolio" onClick={handleClosePopup} className="modal-dot">Portfolio</Link></li>
+                
+                <li ><Link href="/contact" onClick={handleClosePopup} className="modal-dot">Contact</Link></li>
                 </ul>
               </div>
               <div className="center">
                 <ul>
                   <h3>Useful Link</h3>
-                  <li><Link href="/blog" className="modal-sm-dot">Good Reads</Link></li>
-                  <li><Link href="/cv" className="modal-sm-dot">Resume</Link></li>
-                  <li><Link href="/link" className="modal-sm-dot">Link</Link></li>
-                  <li><Link href="/tools" className="modal-sm-dot">Tools</Link></li>
-                  <li><Link target="_blank" href="/pay" className="modal-sm-dot">Pay</Link></li>
+                  <li><Link href="/blog" onClick={handleClosePopup} className="modal-sm-dot">Good Reads</Link></li>
+                  <li><Link href="/cv" onClick={handleClosePopup} className="modal-sm-dot">Resume</Link></li>
+                  <li><Link href="/link" onClick={handleClosePopup} className="modal-sm-dot">Link</Link></li>
+                  <li><Link href="/tools" onClick={handleClosePopup} className="modal-sm-dot">Tools</Link></li>
+                  <li><Link target="_blank" href="/pay" onClick={handleClosePopup} className="modal-sm-dot">Pay</Link></li>
                 </ul>
               </div>
               <div className="right">
                 <h3>Got an idea?</h3>
                 <h2 className="pb-10">Together, let‘s create something wonderful.</h2>
-                <Link href="/contact" className="primary-btn" type="button">Start your project</Link>
+                <Link href="/contact" onClick={handleClosePopup} className="primary-btn" type="button">Start your project</Link>
               </div>
             </div>
             <div className="modal-footer">
