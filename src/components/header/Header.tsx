@@ -126,7 +126,7 @@ const Header: React.FC = () => {
                   <li><Link href="/cv" onClick={handleClosePopup} className="modal-sm-dot">Resume</Link></li>
                   <li><Link href="/link" onClick={handleClosePopup} className="modal-sm-dot">Link</Link></li>
                   <li><Link href="/tools" onClick={handleClosePopup} className="modal-sm-dot">Tools</Link></li>
-                  <li><Link target="_blank" href="pay.subarnabhandari.com" onClick={handleClosePopup} className="modal-sm-dot">Pay</Link></li>
+                  <li><Link target="_blank" href="https://pay.subarnabhandari.com" onClick={handleClosePopup} className="modal-sm-dot">Pay</Link></li>
                 </ul>
               </div>
               <div className="right">
