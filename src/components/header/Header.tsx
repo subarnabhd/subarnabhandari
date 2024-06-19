@@ -126,7 +126,7 @@ const Header: React.FC = () => {
                   <li><Link href="/cv" onClick={handleClosePopup} className="modal-sm-dot">Resume</Link></li>
                   <li><Link href="/link" onClick={handleClosePopup} className="modal-sm-dot">Link</Link></li>
                   <li><Link href="/tools" onClick={handleClosePopup} className="modal-sm-dot">Tools</Link></li>
-                  <li><Link target="_blank" href="/pay" onClick={handleClosePopup} className="modal-sm-dot">Pay</Link></li>
+                  <li><Link target="_blank" href="pay.subarnabhandari.com" onClick={handleClosePopup} className="modal-sm-dot">Pay</Link></li>
                 </ul>
               </div>
               <div className="right">
@@ -140,7 +140,7 @@ const Header: React.FC = () => {
                 <div className="left flex">
                   <li><Link target="_blank" href="https://facebook.com/subarnabhd" className="m-foot-link">Facebook</Link></li>
                   <li><Link target="_blank" href="https://instagram.com/subarnabhd" className="m-foot-link">Instagram</Link></li>
-                  <li><Link target="_blank" href="https://www.linkedin.com/in/subarnabhd" className="m-foot-link">Linkedin</Link></li>
+                  <li><Link target="_blank" href="https://www.linkxedin.com/in/subarnabhd" className="m-foot-link">Linkedin</Link></li>
                   <li><Link target="_blank" href="https://twitter.com/subarnabhd" className="m-foot-link">Twitter</Link></li>
                   <li><Link target="_blank" href="https://behance.net/subarnabhd" className="m-foot-link">Behance</Link></li>
                   <li><Link target="_blank" href="https://dribbble.com/subarnabhd" className="m-foot-link">Dribbble</Link></li>

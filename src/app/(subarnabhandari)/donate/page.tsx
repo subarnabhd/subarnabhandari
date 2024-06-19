@@ -32,7 +32,7 @@ const page = () => {
 
                         </div>
                     </Link>
-                    <Link className="donate-button dbox col" href="https://subarnabhandari.com/pay" type="button" target="_blank">
+                    <Link className="donate-button dbox col" href="https://pay.subarnabhandari.com" type="button" target="_blank">
                     <div className="flex gap-5 items-center border rounded-2xl border-gray-900 hover:bg-gray-900 p-4">
                         <Image className='rounded-xl' src="/donate/bank-transfer.png" width="60" height="60" alt=""></Image>
                             <p className="c1name">Bank Transfer</p>

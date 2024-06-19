@@ -41,6 +41,7 @@ function Footer() {
               <Link className="color-white95 hover-color-white100"  href="/blog">Blog</Link>
               <Link className="color-white95 hover-color-white100"  href="/link">Link</Link>
               <Link className="color-white95 hover-color-white100"  href="/tools">Tools</Link>
+              <Link className="color-white95 hover-color-white100"  href="/donate">Donate</Link>
               <Link className="color-white95 hover-color-white100"  href="/contact">Contact</Link>
             </li>
           </ul>
