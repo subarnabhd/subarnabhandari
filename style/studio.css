@@ -68,5 +68,5 @@
   display: grid;
   background-color: rgba(0, 0, 0, 0.969);
   background-size: 1400px 1400px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }

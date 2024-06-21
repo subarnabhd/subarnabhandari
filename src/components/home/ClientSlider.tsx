@@ -71,28 +71,32 @@ const ClientSlider = () => {
   ];
 
   return (
-    <div className='py-20'>
-
-      <div className="container m-auto flex justify-center items-center" >
+    <div className="py-20">
+      <div className="container m-auto block md:flex justify-center items-center">
         <div>
-          <h2 className='text-black font-bold text-lg w-max'>Trusted by:</h2>
+          <h2 className=" w-full text-black text-left md:text-center font-bold text-lg w-max">
+            Trusted by:
+          </h2>
         </div>
 
-      <div className='relative w-11/12'>
-        <div className="client-slide flex  overflow-x-hidden">
-          <Slider {...settings}>
-            {clients.map((client, index) => (
-              <Link key={index} href={client.link} target="_blank">
-                <Image src={client.imageSrc} alt={client.alt} width={400} height={400} />
-              </Link>
-            ))}
-          </Slider>
+        <div className="relative w-11/12">
+          <div className="client-slide flex  overflow-x-hidden">
+            <Slider {...settings}>
+              {clients.map((client, index) => (
+                <Link key={index} href={client.link} target="_blank">
+                  <Image
+                    src={client.imageSrc}
+                    alt={client.alt}
+                    width={400}
+                    height={400}
+                  />
+                </Link>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
-      </div>
-
     </div>
-
   );
 };
 
