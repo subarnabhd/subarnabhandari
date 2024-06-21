@@ -28,7 +28,7 @@ const page = () => {
       </div>
       <Whychoose />
       <Boxgallery />
-      {/* <GoodDesign /> */}
+      <GoodDesign />
       <Hire />
 
       <div className='bg-white'>

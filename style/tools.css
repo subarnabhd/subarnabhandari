@@ -1,3 +1,21 @@
+.t-slide-1{
+background-image: url(/tools/banner1.webp);
+background-size: cover;
+border: 1px solid #202020;
+}
+.t-slide-2 {
+  background-image: url(/tools/banner2.webp);
+background-size: cover;
+border: 1px solid #202020;
+}
+.t-slide-3{
+  background-image: url(/tools/banner3.webp);
+background-size: cover;
+border: 1px solid #202020;
+}
+.swiper-pagination-bullet-active{
+background:var(--primary)!important;
+}
 .tool-box{
     align-items: center;
     border: 1px solid var(--white20);

@@ -4,89 +4,131 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa6";
 import Toolshead from "@/components/header/Toolshead";
+import Toolslider from "@/components/tools/Toolslider";
+import Toolsdate from "@/components/tools/Toolsdate";
 
 const tools = () => {
-
   return (
     <main>
       <div className="container m-auto">
-
         <div className="flex gap-5 py-5">
-
           <div className="w-3/12 flex flex-col gap-6">
-          <div className="tool-box h-[337px] flex items-center text-center justify-center">
-              <p>Hello!</p>
-          </div>
+            <div className="tool-box h-[337px] flex items-center text-center justify-center">
+              <Toolsdate/>
+            </div>
             <div>
               <h2 className="text-lg font-semibold pb-5">POPULAR</h2>
 
               <div className=" flex flex-col gap-4">
-                <Link className="tool-box tool-box-side"
+                <Link
+                  className="tool-box tool-box-side"
                   href="https://subarnabhd.notion.site/Chrome-Extension-42d226e412f447d9a4104d14e714ba9a?pvs=4"
-                  type="button" target="_blank">
+                  type="button"
+                  target="_blank"
+                >
                   <div className="popbutton">
-                    <Image src="/tools/chrome.webp" width={55}
+                    <Image
+                      src="/tools/chrome.webp"
+                      width={55}
                       height={100}
                       alt=""
                     />
                     <p className="t1-title">Chrome Extension</p>
                   </div>
-                  <p><FaAngleRight /></p>
+                  <p>
+                    <FaAngleRight />
+                  </p>
                 </Link>
 
-                <Link className="tool-box tool-box-side" href="https://subarnabhd.notion.site/Mac-App-d526415b61784b24938a1e21ed539e06?pvs=4"
-                  type="button" target="_blank">
+                <Link
+                  className="tool-box tool-box-side"
+                  href="https://subarnabhd.notion.site/Mac-App-d526415b61784b24938a1e21ed539e06?pvs=4"
+                  type="button"
+                  target="_blank"
+                >
                   <div className="popbutton">
-                    <Image src="/tools/appstore.webp" width={55}
+                    <Image
+                      src="/tools/appstore.webp"
+                      width={55}
                       height={100}
                       alt=""
                     />
                     <p className="t1-title">Mac Apps</p>
                   </div>
-                  <p><FaAngleRight /></p>
+                  <p>
+                    <FaAngleRight />
+                  </p>
                 </Link>
 
-                <Link className="tool-box tool-box-side"
-                  href="https://subarnabhd.notion.site/Windows-App-0277adcc2b184052be72810fae9f82e2?pvs=4" type="button"
-                  target="_blank">
+                <Link
+                  className="tool-box tool-box-side"
+                  href="https://subarnabhd.notion.site/Windows-App-0277adcc2b184052be72810fae9f82e2?pvs=4"
+                  type="button"
+                  target="_blank"
+                >
                   <div className="popbutton">
-                    <Image src="/tools/wstore.webp" width={55}
+                    <Image
+                      src="/tools/wstore.webp"
+                      width={55}
                       height={100}
                       alt=""
                     />
                     <p className="t1-title">Windows App</p>
                   </div>
-                  <p><FaAngleRight /></p>
+                  <p>
+                    <FaAngleRight />
+                  </p>
                 </Link>
 
-                <Link className="tool-box tool-box-side" href="unicode.html" type="button">
+                <Link
+                  className="tool-box tool-box-side"
+                  href="unicode.html"
+                  type="button"
+                >
                   <div className="popbutton">
-                    <Image src="/tools/convert.webp" width={55}
+                    <Image
+                      src="/tools/convert.webp"
+                      width={55}
                       height={100}
                       alt=""
                     />
                     <p className="t1-title">Unicode to Preeti</p>
                   </div>
-                  <p><FaAngleRight /></p>
+                  <p>
+                    <FaAngleRight />
+                  </p>
                 </Link>
 
-                <Link className="tool-box tool-box-side" href="https://pay.subarnabhandari.com" type="button" target="_blank">
+                <Link
+                  className="tool-box tool-box-side"
+                  href="https://pay.subarnabhandari.com"
+                  type="button"
+                  target="_blank"
+                >
                   <div className="popbutton">
-                    <Image src="/pay/subarnapay.webp" width={55}
+                    <Image
+                      src="/pay/subarnapay.webp"
+                      width={55}
                       height={100}
                       alt=""
                     />
                     <p className="t1-title">Subarna Pay</p>
                   </div>
-                  <p><FaAngleRight /></p>
+                  <p>
+                    <FaAngleRight />
+                  </p>
                 </Link>
 
-
-                <Link className="tool-box tool-box-side"
+                <Link
+                  className="tool-box tool-box-side"
                   href="https://subarnabhd.notion.site/1433cdefaa344bdea7bb14c24713fc5d?v=4bc4f007a15c480882e99097ae869adb"
-                  type="button" target="_blank">
+                  type="button"
+                  target="_blank"
+                >
                   <div className="popbutton">
-                    <Image src="/tools/notion.webp" width={55}
+                    <Image
+                      src="/tools/notion.webp"
+                      width={55}
                       height={100}
                       alt=""
                     />
@@ -99,21 +141,94 @@ const tools = () => {
             <div>
               <h2 className="text-lg font-semibold pb-5">Useful Links</h2>
               <div className="tool-link flex flex-wrap gap-2">
-                <Link className=" tool-box" href="https://appstorrent.ru" type="button" target="_blank">Appstorrent
-                  [mac]</Link>
-                <Link className=" tool-box " href="https://haxmac.cc/" type="button" target="_blank">Haxmac [mac]</Link>
-                <Link className=" tool-box " href="https://getintopc.com/" type="button" target="_blank">Getintopc
-                  [windows]</Link>
-                <Link className=" tool-box " href="https://www.truecaller.com" type="button" target="_blank">Truecaller</Link>
-                <Link className=" tool-box " href="http://fast.com/" type="button" target="_blank">Speed Check</Link>
-                <Link className=" tool-box " href="https://www.photopea.com" type="button" target="_blank">Photopea</Link>
-                <Link className=" tool-box " href="https://wetransfer.com" type="button" target="_blank">We Transfer</Link>
-                <Link className=" tool-box " href="https://www.toptal.com/developers/cssminifier" type="button" target="_blank">CSS Minifier</Link>
-                <Link className=" tool-box " href="https://goqr.me/" type="button" target="_blank">QR Code Generator</Link>
-                <Link className=" tool-box " href="https://www.easynepalityping.com/" type="button" target="_blank">Nepali
-                  Typing</Link>
-                <Link className=" tool-box " href="https://www.google.com/search?q=currency+converter" type="button" target="_blank">Currency Converter</Link>
-
+                <Link
+                  className=" tool-box"
+                  href="https://appstorrent.ru"
+                  type="button"
+                  target="_blank"
+                >
+                  Appstorrent [mac]
+                </Link>
+                <Link
+                  className=" tool-box "
+                  href="https://haxmac.cc/"
+                  type="button"
+                  target="_blank"
+                >
+                  Haxmac [mac]
+                </Link>
+                <Link
+                  className=" tool-box "
+                  href="https://getintopc.com/"
+                  type="button"
+                  target="_blank"
+                >
+                  Getintopc [windows]
+                </Link>
+                <Link
+                  className=" tool-box "
+                  href="https://www.truecaller.com"
+                  type="button"
+                  target="_blank"
+                >
+                  Truecaller
+                </Link>
+                <Link
+                  className=" tool-box "
+                  href="http://fast.com/"
+                  type="button"
+                  target="_blank"
+                >
+                  Speed Check
+                </Link>
+                <Link
+                  className=" tool-box "
+                  href="https://www.photopea.com"
+                  type="button"
+                  target="_blank"
+                >
+                  Photopea
+                </Link>
+                <Link
+                  className=" tool-box "
+                  href="https://wetransfer.com"
+                  type="button"
+                  target="_blank"
+                >
+                  We Transfer
+                </Link>
+                <Link
+                  className=" tool-box "
+                  href="https://www.toptal.com/developers/cssminifier"
+                  type="button"
+                  target="_blank"
+                >
+                  CSS Minifier
+                </Link>
+                <Link
+                  className=" tool-box "
+                  href="https://goqr.me/"
+                  type="button"
+                  target="_blank"
+                >
+                  QR Code Generator
+                </Link>
+                <Link
+                  className=" tool-box "
+                  href="https://www.easynepalityping.com/"
+                  type="button"
+                  target="_blank"
+                >
+                  Nepali Typing
+                </Link>
+                <Link
+                  className=" tool-box "
+                  href="https://www.google.com/search?q=currency+converter"
+                  type="button"
+                  target="_blank"
+                >
+                  Currency Converter
+                </Link>
               </div>
             </div>
 
@@ -122,19 +237,17 @@ const tools = () => {
                 <h4>Tools. by Subarna</h4>
               </div>
               <p className="bap">Help us to grow</p>
-              <p><Link className="primary-sm-btn" href="/donate">Donate Now</Link></p>
+              <p>
+                <Link className="primary-sm-btn" href="/donate">
+                  Donate Now
+                </Link>
+              </p>
             </div>
-
           </div>
 
           <div className="w-9/12 tool-list flex flex-col gap-6">
             <div className="slider">
-            <Image
-                    src="/tools/banner1.webp" className="w-full rounded-xl"
-                    width={1000}
-                    height={100}
-                    alt=""
-                  />
+              <Toolslider />
             </div>
             <div>
               <h2 className="text-lg font-semibold pb-5">Online Tools</h2>
@@ -161,7 +274,12 @@ const tools = () => {
                   type="button"
                   target="_blank"
                 >
-                  <Image src="/tools/ilook.webp" width={55} height={100} alt="" />
+                  <Image
+                    src="/tools/ilook.webp"
+                    width={55}
+                    height={100}
+                    alt=""
+                  />
                   <p className="t1-title">iLook - Hand Mirror</p>
                   <p className="t2-title">One-click Camera Check</p>
                 </Link>
@@ -237,7 +355,12 @@ const tools = () => {
                 </Link>
 
                 <Link className="tool-box" href="/date" type="button">
-                  <Image src="/date/dfavi.webp" width={55} height={100} alt="" />
+                  <Image
+                    src="/date/dfavi.webp"
+                    width={55}
+                    height={100}
+                    alt=""
+                  />
                   <p className="t1-title">Date. by Subarna</p>
                   <p className="t2-title">date.subarnabhandari.com</p>
                 </Link>
@@ -284,7 +407,12 @@ const tools = () => {
                   type="button"
                   target="_blank"
                 >
-                  <Image src="/tools/fonts.webp" width={55} height={100} alt="" />
+                  <Image
+                    src="/tools/fonts.webp"
+                    width={55}
+                    height={100}
+                    alt=""
+                  />
                   <p className="t1-title">Fonts</p>
                   <p className="t2-title">English & Nepali</p>
                 </Link>
@@ -294,7 +422,12 @@ const tools = () => {
                   type="button"
                   target="_blank"
                 >
-                  <Image src="/tools/icons.webp" width={55} height={100} alt="" />
+                  <Image
+                    src="/tools/icons.webp"
+                    width={55}
+                    height={100}
+                    alt=""
+                  />
                   <p className="t1-title">Icons</p>
                   <p className="t2-title">Develop & Design</p>
                 </Link>
@@ -428,7 +561,12 @@ const tools = () => {
                   type="button"
                   target="_blank"
                 >
-                  <Image src="/tools/figma.webp" width={55} height={100} alt="" />
+                  <Image
+                    src="/tools/figma.webp"
+                    width={55}
+                    height={100}
+                    alt=""
+                  />
                   <p className="t1-title">Figma</p>
                   <p className="t2-title">UI/UX Design</p>
                 </Link>
@@ -587,7 +725,6 @@ const tools = () => {
                 </Link>
               </div>
             </div>
-
           </div>
         </div>
       </div>
