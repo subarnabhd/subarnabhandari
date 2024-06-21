@@ -22,7 +22,7 @@ const AboutPage = () => {
         <meta name="twitter:image" content="/about/about-header.jpg" />
       </Head>
       <main>
-        <div className="container flex flex-col m-auto bg-neutral-4 rounded-2xl py-5 gap-10 pb-20">
+        <div className="container flex flex-col m-auto bg-neutral-4 rounded-2xl py-5 px-4 gap-10 pb-20">
           <Image
             className="m-auto w-full rounded-xl"
             src="/about/about-header.jpg"
