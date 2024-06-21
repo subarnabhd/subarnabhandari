@@ -7,7 +7,7 @@ import React from "react";
 const toolshead = () => {
   return (
     <div className="s-header ">
-    <div className="container m-auto flex align-middle items-center justify-between px-5">
+    <div className="container m-auto flex align-middle items-center justify-between px-4">
       <div className="flex gap-2 align-middle items-center justify-between ">
         <Link href="/tools">
           <Image src="/tools/tools.svg" width={35} height={100} alt="Tools Icon" />
