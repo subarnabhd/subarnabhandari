@@ -208,10 +208,14 @@
 
   .tools-right-col .tool-box {
     width: -webkit-fill-available;
-    max-width: 184px;
+    max-width: 175px;
     padding: 10px;
     min-width: 88px;
   }
+            .tool-box-parent {
+              justify-content: center;
+              gap:10px;
+            }
 
   .tool-box img {
     width: 50px;
