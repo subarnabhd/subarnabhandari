@@ -35,10 +35,10 @@ export default function App() {
           data-swiper-parallax="-23%"
         ></div>
         <SwiperSlide>
-          <div className="t-slide-1 h-[337px] p-10 bg-black rounded-xl"></div>
+          <div className="t-slide-1  p-10 bg-black rounded-xl"></div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="t-slide-2 h-[337px] p-10 bg-black rounded-xl">
+          <div className="t-slide-2  p-10 bg-black rounded-xl">
             <div className="title" data-swiper-parallax="-300">
               The Subarna Studio
             </div>
@@ -59,7 +59,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="t-slide-3 h-[337px] p-10 bg-black rounded-xl">
+          <div className="t-slide-3 p-10 bg-black rounded-xl">
             <div className="title" data-swiper-parallax="-300">
               Subarna Bhandari
             </div>

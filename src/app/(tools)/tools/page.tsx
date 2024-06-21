@@ -12,14 +12,14 @@ const tools = () => {
     <main>
       <div className="container m-auto">
         <div className="flex gap-5 py-5">
-          <div className="w-3/12 flex flex-col gap-6">
+          <div className="tools-left-col w-full md:w-3/12 hidden md:flex gap-5 flex-col">
             <div className="tool-box h-[337px] flex items-center text-center justify-center">
-              <Toolsdate/>
+              <Toolsdate />
             </div>
-            <div>
+            <div className="">
               <h2 className="text-lg font-semibold pb-5">POPULAR</h2>
 
-              <div className=" flex flex-col gap-4">
+              <div className=" flex flex-col gap-4 justify-center">
                 <Link
                   className="tool-box tool-box-side"
                   href="https://subarnabhd.notion.site/Chrome-Extension-42d226e412f447d9a4104d14e714ba9a?pvs=4"
@@ -140,7 +140,7 @@ const tools = () => {
             </div>
             <div>
               <h2 className="text-lg font-semibold pb-5">Useful Links</h2>
-              <div className="tool-link flex flex-wrap gap-2">
+              <div className="tool-link flex flex-wrap gap-3 ">
                 <Link
                   className=" tool-box"
                   href="https://appstorrent.ru"
@@ -245,13 +245,13 @@ const tools = () => {
             </div>
           </div>
 
-          <div className="w-9/12 tool-list flex flex-col gap-6">
-            <div className="slider">
+          <div className="tools-right-col w-full md:w-9/12  tool-list flex flex-col gap-6">
+            <div className="tools-slider">
               <Toolslider />
             </div>
             <div>
               <h2 className="text-lg font-semibold pb-5">Online Tools</h2>
-              <div className=" flex flex-wrap gap-4">
+              <div className="tool-box-parent ">
                 <Link
                   className="tool-box"
                   href="https://chromewebstore.google.com/detail/youtube-search/pfbenbknnmnppacheleigdmlhgllhlpa"
@@ -368,7 +368,7 @@ const tools = () => {
             </div>
             <div>
               <h2 className="text-lg font-semibold pb-5">Productivity</h2>
-              <div className=" flex flex-wrap gap-4">
+              <div className="tool-box-parent">
                 <Link
                   className="tool-box"
                   href="https://subarnabhd.notion.site/Chrome-Extension-42d226e412f447d9a4104d14e714ba9a?pvs=4"
@@ -554,7 +554,7 @@ const tools = () => {
             </div>
             <div>
               <h2 className="text-lg font-semibold pb-5">Creativity</h2>
-              <div className=" flex flex-wrap gap-4">
+              <div className="tool-box-parent">
                 <Link
                   className="tool-box"
                   href="https://subarnabhd.notion.site/Figma-90c1da50b3af48d8be800a832fcc5e3b?pvs=4"
