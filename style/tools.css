@@ -46,7 +46,7 @@ background:var(--primary)!important;
     letter-spacing: 0.6px;
 }
 .tool-list .tool-box{
-    min-width: 224px;
+    min-width: 228px;
 }
 .tool-box-side{
     display: flex;
