@@ -40,41 +40,62 @@ const Homebanner = () => {
 
   return (
     <div className="home-banner text-center bg-[#F5F5F7] items-center flex flex-col justify-center">
-          <div className="home-link">
+      <div className="home-link">
+        <div className="link-left">
+          <div className="link-line"></div>
+          <div>
+            <ul>
+              <li>
+                <Link href="https://facebook.com/subarnabhd" target="_blank">
+                  facebook
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.linkedin.com/in/subarnabhd"
+                  target="_blank"
+                >
+                  linkedin
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.instagram.com/subarnabhd"
+                  target="_blank"
+                >
+                  instagram
+                </Link>
+              </li>
+              <li>
+                <Link href="https://behance.net/subarnabhd" target="_blank">
+                  Behance
+                </Link>
+              </li>
+              <li>
+                <Link href="https://behance.net/subarnabhd" target="_blank">
+                  Twitter
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
 
+        <div className="link-center">
+          <div className="link-line"></div>
+        </div>
 
-<div className="link-left">
-  <div className="link-line">
-  </div>
-  <div>
-    <ul>
-      <li><Link href="https://facebook.com/subarnabhd" target="_blank">facebook</Link></li>
-      <li><Link href="https://www.linkedin.com/in/subarnabhd" target="_blank">linkedin</Link></li>
-      <li><Link href="https://www.instagram.com/subarnabhd" target="_blank">instagram</Link></li>
-      <li><Link href="https://behance.net/subarnabhd" target="_blank">Behance</Link></li>
-      <li><Link href="https://behance.net/subarnabhd" target="_blank">Twitter</Link></li>
-    </ul>
-  </div>
-</div>
-
-<div className="link-center">
-  <div className="link-line">
-  </div>
-</div>
-
-<div className="link-right">
-  <div className="link-line">
-  </div>
-  <div>
-    <ul>
-      <li><Link href="#home-scroll">Scroll Down</Link></li>
-    </ul>
-  </div>
-</div>
-
-</div>
-      <div className='c-home'>
-    
+        <div className="link-right">
+          <div className="link-line"></div>
+          <div>
+            <ul>
+              <li>
+                <Link href="#home-scroll">Scroll Down</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="c-home">
         <div className="items-center flex flex-col gap-5">
           <Image
             src="/about/SubarnaBhandari.webp"
@@ -83,14 +104,17 @@ const Homebanner = () => {
             width={300}
             height={100}
           />
-          <h2 className="text-6xl font-semibold">
-            Subarna<b>.</b><span className="font-light">Bhandari</span>
+          <h2 className="text-3xl md:text-6xl font-semibold">
+            Subarna<b>.</b>
+            <span className="font-light">Bhandari</span>
           </h2>
-          <p className='color-white50 text-2xl font-normal'>www.subarnabhandari.com</p>
+          <p className="color-white50 text-lg md:text-2xl font-normal">
+            www.subarnabhandari.com
+          </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Homebanner;

@@ -8,7 +8,7 @@ import { FaArrowDown } from "react-icons/fa6";
 
 const Studiofooter = () => {
   return (
-    <div className='container m-auto py-20 border-t border-gray-900 flex justify-between items-center'>
+    <div className='container m-auto py-20 px-4 border-t border-gray-900 flex justify-between items-center'>
          <Link href="/" className="flex text-center justify-content" aria-label="Subarna Bhandari Home">
           <Image src="studio/thesubarnastudio.svg" width={200} height={30} alt="Subarna Bhandari Logo" />
         </Link>

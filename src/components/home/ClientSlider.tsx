@@ -74,7 +74,7 @@ const ClientSlider = () => {
     <div className="py-20">
       <div className="container m-auto block md:flex justify-center items-center">
         <div>
-          <h2 className=" w-full text-black text-left md:text-center font-bold text-lg w-max">
+          <h2 className="  text-black text-left md:text-center font-bold text-lg w-max">
             Trusted by:
           </h2>
         </div>

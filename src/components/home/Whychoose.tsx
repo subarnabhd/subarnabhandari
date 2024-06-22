@@ -5,7 +5,7 @@ import React from 'react'
 const Whychoose = () => {
     return (
         <div className='bg-black py-20'>
-            <div className="container m-auto flex gap-5">
+            <div className="container m-auto  block md:flex gap-5 px-4">
 
             <div className='flex flex-col gap-5 justify-center  text-left' >
                 

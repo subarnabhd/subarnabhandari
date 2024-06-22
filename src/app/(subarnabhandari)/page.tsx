@@ -14,16 +14,31 @@ const page = () => {
   return (
     <main>
       <Homebanner />
-      <div className=" text-5xl  bg-[#F5F5F7] pb-20 font-extrabold w-header flex">
-
-        <Link className="color-black20 hover-color-black40 m-auto flex gap-4" href="mailto:hello@subarnabhandari.com"><FaRegPaperPlane />hello@subarnabhandari.com</Link>
+      <div className=" text-xl md:text-5xl  bg-[#F5F5F7] pb-20 font-extrabold w-header flex">
+        <Link
+          className="color-black20 hover-color-black40 m-auto flex gap-4"
+          href="mailto:hello@subarnabhandari.com"
+        >
+          <FaRegPaperPlane />
+          hello@subarnabhandari.com
+        </Link>
       </div>
       <div className="text-center bg-[#F5F5F7] p-5 w-header">
-
         <div className="bg-white  p-20 rounded-t-3xl">
-          <h2 className="site-h text-black">Striving to create elegant & effortless designs.</h2>
-          <p className="text-lg color-black55">Unlimited possibility to reach out. Create your own brand with Subarna.</p>
-          <Image src="/home/pc.webp" className="m-auto" alt="Subarna PC" width={700} height={100}></Image>
+          <h2 className="site-h text-black">
+            Striving to create elegant & effortless designs.
+          </h2>
+          <p className="text-lg color-black55">
+            Unlimited possibility to reach out. Create your own brand with
+            Subarna.
+          </p>
+          <Image
+            src="/home/pc.webp"
+            className="m-auto"
+            alt="Subarna PC"
+            width={700}
+            height={100}
+          ></Image>
         </div>
       </div>
       <Whychoose />
@@ -31,13 +46,11 @@ const page = () => {
       <GoodDesign />
       <Hire />
 
-      <div className='bg-white'>
+      <div className="bg-white">
         <ClientSlider />
       </div>
-
-
     </main>
-  )
+  );
 }
 
 export default page

@@ -11,7 +11,7 @@ const cv = () => {
 
 
             <main className="cv  py-5">
-                <div className="cv-container">
+                <div className="cv-container px-4">
 
                     <div className="">
 
