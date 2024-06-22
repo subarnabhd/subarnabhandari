@@ -8,7 +8,7 @@ const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulating a delay to demonstrate loader
+    // Simulate a delay to demonstrate loader
     const delay = setTimeout(() => {
       setIsLoading(false);
     }, 2000); // Replace with actual loading logic
@@ -17,21 +17,19 @@ const Page = () => {
   }, []);
 
   useEffect(() => {
-    // Hide preloader and show content once loaded
     if (!isLoading) {
-      const preloader = document.querySelector(".preloader");
-      const content = document.querySelector(".containbox");
+      const preloader = document.querySelector(
+        ".preloader"
+      ) as HTMLElement | null;
+      const content = document.querySelector(
+        ".containbox"
+      ) as HTMLElement | null;
       if (preloader && content) {
-        preloader.setAttribute("style", "display: none;");
-        content.setAttribute("style", "display: block;");
+        preloader.style.display = "none";
+        content.style.display = "block";
       }
     }
   }, [isLoading]);
-
-  // Toggle switch element
-  const toggleSwitch = document.querySelector(
-    '.theme-switch input[type="checkbox"]'
-  ) as HTMLInputElement | null;
 
   return (
     <div className="container">
@@ -194,16 +192,6 @@ const Page = () => {
             </Link>
             . All Rights Reserved.
           </div>
-
-          {/* <div className="theme-switch-wrapper" id="switch">
-            <label className="theme-switch">
-              <input
-                type="checkbox"
-                defaultChecked={localStorage.getItem("theme") === "dark"}
-                onChange={switchTheme}
-              />
-            </label>
-          </div>  */}
         </div>
       )}
     </div>
