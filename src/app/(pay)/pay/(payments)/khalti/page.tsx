@@ -1,8 +1,52 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { IoArrowBackOutline } from "react-icons/io5";
-const page = () => {
+
+const Page = () => {
+  useEffect(() => {
+    const toggleButtonKhalti = document.getElementById("toggle-button-khalti");
+    const icon2 = document.getElementById("icon2");
+
+    if (toggleButtonKhalti) {
+      toggleButtonKhalti.addEventListener("click", (event) => {
+        event.preventDefault();
+        // Add your toggle logic here
+        if (icon2) {
+          if (icon2.classList.contains("fa-eye")) {
+            icon2.classList.remove("fa-eye");
+            icon2.classList.add("fa-eye-slash");
+          } else {
+            icon2.classList.remove("fa-eye-slash");
+            icon2.classList.add("fa-eye");
+          }
+        }
+      });
+    }
+
+    const copyButton = document.querySelector(".fa-copy").parentElement;
+    if (copyButton) {
+      copyButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        // Add your copy logic here
+        const details = `Name: SUBARNA BHANDARI\nKhalti ID: 9844740360`;
+        navigator.clipboard.writeText(details).then(() => {
+          alert("Details copied to clipboard");
+        });
+      });
+    }
+
+    return () => {
+      if (toggleButtonKhalti) {
+        toggleButtonKhalti.removeEventListener("click", () => {});
+      }
+      if (copyButton) {
+        copyButton.removeEventListener("click", () => {});
+      }
+    };
+  }, []);
+
   return (
     <div className="containbox">
       <div className="modal-content">
@@ -13,8 +57,8 @@ const page = () => {
               src="/pay/header.webp"
               width={30}
               height={30}
-              alt=""
-            ></Image>
+              alt="SubarnaPay Logo"
+            />
             <p className="text-2xl">
               Subarna<span>Pay</span>
             </p>
@@ -34,8 +78,8 @@ const page = () => {
                   src="/pay/khalti.webp"
                   width={100}
                   height={100}
-                  alt=""
-                ></Image>
+                  alt="Khalti Logo"
+                />
               </Link>
               <Link
                 className="modal-title khalti"
@@ -54,7 +98,11 @@ const page = () => {
               </Link>
             </div>
             <div className="acc-qr qbox">
-              <img className="qr" src="/pay/qr.khalti.svg" />
+              <img
+                className="qr"
+                src="/pay/qr.khalti.svg"
+                alt="Khalti QR Code"
+              />
             </div>
           </div>
           <div className="accdetails" id="acc.khalti">
@@ -74,17 +122,11 @@ const page = () => {
             href=""
             type="button"
             id="toggle-button-khalti"
-            // onclick="toggleReplaceRollBack2()"
             className="btn btn-primaryn eyebtn"
           >
             <i id="icon2" className="fas fa-eye"></i>
           </Link>
-          <Link
-            href=""
-            type="button"
-            // onclick="copycontentkhalti()"
-            className="btn btn-primary"
-          >
+          <Link href="" type="button" className="btn btn-primary">
             <i className="fa-regular fa-copy"></i>&nbsp;&nbsp;Copy Details
           </Link>
           <Link
@@ -108,4 +150,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
