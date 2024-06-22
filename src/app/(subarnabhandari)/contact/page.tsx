@@ -12,7 +12,7 @@ const page = () => {
     description: "Description",
   };
   return (
-    <main className="bg-white">
+    <main className="bg-white w-header">
       <div className="container m-auto">
         <div className=" flex justify-between border-b py-2 items-center">
           <div>

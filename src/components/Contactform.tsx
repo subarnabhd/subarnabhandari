@@ -57,7 +57,7 @@ const Contactform = () => {
           <textarea
             id="message"
             // rows="4"
-            className="s-input"
+            className="s-input min-h-[100px]"
             placeholder="Message / Project Details"
           ></textarea>
         </div>
