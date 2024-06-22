@@ -90,8 +90,8 @@
     border: 15px solid var(--loader-border);
     border-top: 15px solid var(--red);
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    /* width: 150px;
+    height: 150px; */
     animation: 2s linear infinite spin;
   }
   .loader img {
@@ -165,9 +165,10 @@
   }
   .containbox .logo {
     margin: 15px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      justify-content: center;
   }
   .card {
     text-align: center;
@@ -192,7 +193,8 @@
   }
   .logoicon {
     background-color: var(--red);
-    width: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 14px;
     padding: 10px;
     margin-right: 10px;
@@ -285,6 +287,12 @@
   
   .row {
     padding: 15px 20px;
+        --bs-gutter-x: 1.5rem;
+          --bs-gutter-y: 0;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 15px;
+          justify-content: center;
   }
   .modal-footer {
     text-align: center !important;
