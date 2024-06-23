@@ -108,7 +108,7 @@ const Header: React.FC = () => {
       {isPopupOpen && (
         <div className="menu absolute z-50 h-screen w-full bg-black">
           <div className="container m-auto h-screen flex flex-col justify-between py-4">
-            <div className="flex justify-end">
+            <div className="flex justify-end px-2">
               <button
                 type="button"
                 className="text-4xl text-white"
