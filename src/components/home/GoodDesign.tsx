@@ -4,10 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper/modules";
-import Star from "../lottie/Star";
+import Star from "../lottie/Rating";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import Rating from "../lottie/Rating";
 
 interface SlideProps {
   src: string;
@@ -28,7 +29,7 @@ interface SliderProps {
 
 const Designs: React.FC<SliderProps> = ({ slides }) => (
   <div className="good-design bg-white py-28 w-header">
-    <Star />
+    <Rating />
     <h2 className="site-h text-black">
       Striving to create elegant & effortless designs.
     </h2>
