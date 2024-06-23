@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Copywrite = () => {
   return (
-    <div className="text-xs border-t border-gray-900 color-white90 px-4">
+    <div className="text-xs border-t border-gray-900 color-white90 px-4 bg-black">
       <div className="container py-5 block md:flex text-center m-auto items-center">
         <div className=" text-center  w-full    md:text-left md:justify-center">
           <p className="">

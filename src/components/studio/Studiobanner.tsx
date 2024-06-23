@@ -17,7 +17,7 @@ const Studiobanner = () => {
           height={100}
           alt=""
         />
-        <h2 className='text-4xl font-bold  text-center'>The Subarna Studio</h2>
+        <h2 className='text-4xl font-bold  text-center text-white'>The Subarna Studio</h2>
         <p className='color-white60 text-xl  font-normal'>studio.subarnabhandari.com</p>
       </div>
 

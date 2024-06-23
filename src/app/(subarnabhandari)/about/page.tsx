@@ -31,7 +31,7 @@ const AboutPage = () => {
             alt="About Subarna Bhandari"
           />
           <div className='flex flex-col gap-3'>
-            <h2 className="text-4xl color-primary-600 font-bold pb-2">
+            <h2 className="text-4xl color-primary-600 font-bold pb-2 text-white">
               Hello!👋 I’m Subarna, a Web, Graphic, & UI/UX Designer.
             </h2>
             <p className="text-base mb-4 color-white90">
@@ -40,7 +40,7 @@ const AboutPage = () => {
             <p className="text-base mb-4 color-white90">
               When I’m not glued to the computer, I like to spend time watching movies and painting. I am also an adrenaline junkie and love all sports above and below ground level – doesn’t mean I’m necessarily good at them all!
             </p>
-            <p className="text-bold">
+            <p className="text-bold text-white">
               Creating the Brand, that people <b>Love.</b>
             </p>
           </div>

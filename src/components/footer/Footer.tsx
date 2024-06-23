@@ -5,7 +5,7 @@ import Socialmedia from "./Socialmedia";
 
 function Footer() {
   return (
-    <div className="s-footer pt-20 pb-7 border-t border-gray-900 px-4">
+    <div className="s-footer pt-20 pb-7 border-t border-gray-900 px-4 bg-black">
       <div className="container m-auto flex flex-col gap-5 ">
         <div className="flex gap-5 color-white90 pb-10 border-b border-gray-900 items-center">
           <Link href="/" className="hidden md:flex  p-4 bg-white20 hover-bg-white25">

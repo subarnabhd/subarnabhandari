@@ -76,6 +76,7 @@
   align-content: center;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 .minimal .s-header-link {
   color: var(--black95);
