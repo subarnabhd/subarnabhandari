@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import { IoArrowBackOutline } from "react-icons/io5";
+import { MdOutlineContentCopy } from "react-icons/md";
 
 const Page: React.FC = () => {
   useEffect(() => {
@@ -127,16 +128,14 @@ const Page: React.FC = () => {
           >
             <i id="icon2" className="fas fa-eye"></i>
           </Link>
-          <Link href="" type="button" className="btn btn-primary">
-            <i className="fa-regular fa-copy"></i>&nbsp;&nbsp;Copy Details
+          <Link href=""  type="button" className="btn btn-primary flex items-center">
+            <MdOutlineContentCopy />&nbsp;&nbsp;Copy Details
           </Link>
           <Link
             type="button"
             className="btn btn-primary openapp"
             href="khalti://"
-          >
-            <i className="fa-solid fa-arrow-trend-up"></i>
-          </Link>
+          ></Link>
           <Link
             type="button"
             target="_blank"

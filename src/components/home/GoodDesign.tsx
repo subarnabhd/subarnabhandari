@@ -44,7 +44,7 @@ const settings = {
 };
 
 const Designs: React.FC<SliderProps> = ({ slides }) => (
-  <div className="good-design bg-white">
+  <div className="good-design bg-white py-28">
     <h2 className="site-h text-black">Striving to create elegant & effortless designs.</h2>
     <p className="text-lg color-black55">Unlimited possibility to reach out. Create your own brand with Subarna.</p>
 
