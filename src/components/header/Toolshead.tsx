@@ -13,7 +13,7 @@ const toolshead = () => {
           <Image src="/tools/tools.svg" width={35} height={100} alt="Tools Icon" />
         </Link>
         <Link  href="/tools" className="sitetitle" aria-current="page">
-          <p className="font-bold text-lg">Tools.</p>
+          <p className="font-bold text-lg text-white">Tools.</p>
         </Link>
         <p className="font-base text-[10px] text-gray-400">
           By&nbsp;
