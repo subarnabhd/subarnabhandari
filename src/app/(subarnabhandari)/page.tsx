@@ -1,15 +1,16 @@
-import Boxgallery from '@/components/home/Boxgallery'
-import Hire from '@/components/home/Hire'
+import Boxgallery from "@/components/home/Boxgallery";
+import Hire from "@/components/home/Hire";
 
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 import { FaRegPaperPlane } from "react-icons/fa";
-import Homebanner from '@/components/home/Homebanner'
-import Whychoose from '@/components/home/Whychoose'
-import ClientSlider from '@/components/home/ClientSlider'
-import GoodDesign from '@/components/home/GoodDesign'
-import Textslider from '@/components/home/Textslider'
+import Homebanner from "@/components/home/Homebanner";
+import Whychoose from "@/components/home/Whychoose";
+import ClientSlider from "@/components/home/ClientSlider";
+import GoodDesign from "@/components/home/GoodDesign";
+import Designslide from "@/components/home/Designslide";
+import Textslider from "@/components/home/Textslider";
 import Textslider2 from "@/components/home/Textslider2";
 
 const page = () => {
@@ -46,10 +47,11 @@ const page = () => {
       <Whychoose />
       <div className="bg-black text-slider">
         <Textslider />
-        <Textslider2/>
+        <Textslider2 />
       </div>
       <Boxgallery />
-      <GoodDesign />
+      {/* <GoodDesign /> */}
+      <Designslide />
       <Hire />
 
       <div className="bg-white">
@@ -57,6 +59,6 @@ const page = () => {
       </div>
     </main>
   );
-}
+};
 
-export default page
+export default page;

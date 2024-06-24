@@ -1,33 +1,12 @@
 "use client";
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper/modules";
-import Star from "../lottie/Rating";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
+import { FreeMode, Pagination } from 'swiper/modules';
 import Rating from "../lottie/Rating";
 
-interface SlideProps {
-  src: string;
-  href: string;
-}
-
-const Slide: React.FC<SlideProps> = ({ src, href }) => (
-  <SwiperSlide>
-    <Link href={href} target="_blank">
-      <Image src={src} alt="Slide" width={300} height={300} />
-    </Link>
-  </SwiperSlide>
-);
-
-interface SliderProps {
-  slides: SlideProps[];
-}
-
-const Designs: React.FC<SliderProps> = ({ slides }) => (
+export default function App() {
+  return (
+    <>
   <div className="good-design bg-white py-28 w-header">
     <Rating />
     <h2 className="site-h text-black">
@@ -36,35 +15,27 @@ const Designs: React.FC<SliderProps> = ({ slides }) => (
     <p className="text-lg color-black55">
       Unlimited possibility to reach out. Create your own brand with Subarna.
     </p>
-    {/* <div>
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper"
-      >
-        {slides.map((slide, index) => (
-          <Slide key={index} {...slide} />
-        ))}
-      </Swiper>
-    </div> */}
+    <Swiper
+      slidesPerView={3}
+      spaceBetween={30}
+      freeMode={true}
+      pagination={{
+        clickable: true,
+      }}
+      modules={[FreeMode, Pagination]}
+      className="mySwiper"
+    >
+      <SwiperSlide>Slide 1</SwiperSlide>
+      <SwiperSlide>Slide 2</SwiperSlide>
+      <SwiperSlide>Slide 3</SwiperSlide>
+      <SwiperSlide>Slide 4</SwiperSlide>
+      <SwiperSlide>Slide 5</SwiperSlide>
+      <SwiperSlide>Slide 6</SwiperSlide>
+      <SwiperSlide>Slide 7</SwiperSlide>
+      <SwiperSlide>Slide 8</SwiperSlide>
+      <SwiperSlide>Slide 9</SwiperSlide>
+    </Swiper>
   </div>
-);
-
-const App = () => {
-  const slides = [
-    { src: "/path/to/image1.jpg", href: "https://example.com/1" },
-    { src: "/path/to/image2.jpg", href: "https://example.com/2" },
-    { src: "/path/to/image3.jpg", href: "https://example.com/3" },
-    { src: "/path/to/image4.jpg", href: "https://example.com/4" },
-
-  ];
-
-  return <Designs slides={slides} />;
-};
-
-export default App;
+  </>
+  );
+}

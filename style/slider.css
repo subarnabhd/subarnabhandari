@@ -1,29 +1,12 @@
 
 
-.good-design .slick-track {
-  display: flex;
-  /* gap: 40px; */
-  position: relative;
-}
-.good-design .slick-slide {
-  display: flex;
-  gap:20px;
-  width: 100%;
-  border: 1px solid var(--black15);
-  border-radius: 12px;
-  overflow: hidden;
-  background-color: red;
-}
 .good-design  img {
-  height: 500px !important;
-  width: 500px !important;
+  max-height: 500px !important;
+  max-width: 500px !important;
   background-color: green;
-}
-.good-design .slick-slide {
-  width: 500px!important;
-}
-.good-design .slick-track {
-  width: 500px!important;
+  border-radius: 12px;
+  margin: 50px 0;
+
 }
 
 /* ----------------------------------------- */
