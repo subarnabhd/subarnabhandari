@@ -5,28 +5,29 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay,  Navigation, Mousewheel } from "swiper/modules";
 
 export default function App() {
   return (
     <>
       <Swiper
-        slidesPerView={10}
+        slidesPerView={12}
         cssMode={true}
         spaceBetween={20}
         freeMode={true}
         loop={true}
         autoplay={{
-          delay: 500,
-          pauseOnMouseEnter: false,
+          delay: 200,
+          pauseOnMouseEnter: true,
           disableOnInteraction: false,
-          reverseDirection: true,
-        }}
-        pagination={{
-          clickable: false,
+          reverseDirection: false,
         }}
         navigation={false}
-        modules={[Autoplay, Navigation]}
+        mousewheel={{
+          forceToAxis: true,
+          releaseOnEdges: true,
+        }}
+        modules={[Autoplay, Navigation, Mousewheel]}
         className="mySwiper"
       >
         <SwiperSlide>
