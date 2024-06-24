@@ -36,7 +36,7 @@ const page = () => {
           </p>
           <Image
             src="/home/pc.webp"
-            className="m-auto"
+            className="m-auto w-auto h-auto"
             alt="Subarna PC"
             width={700}
             height={100}
@@ -44,7 +44,7 @@ const page = () => {
         </div>
       </div>
       <Whychoose />
-      <div className="bg-black text-slider">
+      <div className="bg-black text-slider overflow-hidden">
         <Textslider />
         <Textslider2 />
       </div>

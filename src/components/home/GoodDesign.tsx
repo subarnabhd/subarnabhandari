@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Autoplay, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import Rating from "../lottie/Rating";
 import Link from "next/link";
 import Image from "next/image";
 
-const App: React.FC = () => {
+const GoodDesign: React.FC = () => {
   const slides = [
     { src: "/design/slider_1.gif", href: "#" },
     { src: "/design/slider_2.gif", href: "#" },
@@ -44,7 +44,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      <div className="good-design bg-white py-28 w-header">
+      <div className="good-design bg-white py-28 w-header overflow-hidden">
         <Rating />
         <h2 className="site-h text-black">
           Striving to create elegant & effortless designs.
@@ -60,23 +60,26 @@ const App: React.FC = () => {
           freeMode={true}
           loop={true}
           autoplay={{
-            delay: 200,
-            pauseOnMouseEnter: true,
+            delay: 2500,
             disableOnInteraction: false,
-            reverseDirection: false,
-          }}
-          navigation={false}
-          mousewheel={{
-            forceToAxis: true,
-            releaseOnEdges: true,
-          }}
-          modules={[Autoplay, Navigation, Mousewheel]}
-          className="mySwiper"
-        >
+
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay]}
+        className="mySwiper"
+      >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
               <Link href={slide.href}>
-                <Image src={slide.src} alt={`Slide ${index + 1}`} width="350" height="350" ></Image>
+                <Image
+                  src={slide.src}
+                  alt={`Slide ${index + 1}`}
+                  width="350"
+                  height="350"
+                ></Image>
               </Link>
             </SwiperSlide>
           ))}
@@ -86,4 +89,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default GoodDesign;

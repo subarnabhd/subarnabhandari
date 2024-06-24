@@ -99,7 +99,7 @@ const Homebanner = () => {
         <div className="items-center flex flex-col gap-5">
           <Image
             src="/about/SubarnaBhandari.webp"
-            className="m-auto rounded-full pb-5"
+            className="m-auto rounded-full pb-5 w-auto h-auto"
             alt="Subarna Bhandari"
             width={300}
             height={100}

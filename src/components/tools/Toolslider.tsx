@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 import { Autoplay, Parallax, Pagination, Navigation } from "swiper/modules";
 import Link from "next/link";
 
-export default function App() {
+export default function Toolslider() {
   return (
     <>
       <Swiper

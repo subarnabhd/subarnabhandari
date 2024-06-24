@@ -9,8 +9,21 @@
   border: 1px solid #ececee;
 
 }
-
+.good-design img:hover {
+box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
 /* ----------------------------------------- */
+.client-slide img:hover{
+  filter: brightness(0.4);
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+.studio-c-slide img:hover{
+    filter: brightness(5);
+      cursor: pointer;
+      transition: 0.5s ease;
+
+}
 .client-slide .swiper-wrapper {
   transition-timing-function: linear;
 }

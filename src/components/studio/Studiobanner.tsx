@@ -9,20 +9,26 @@ import { FaArrowDown } from "react-icons/fa6";
 const Studiobanner = () => {
   return (
     <div className="studio-banner ">
-      <div className='absolute top-[15%] left-1/2 transform -translate-x-1/2 flex flex-col gap-4 items-center m-auto'>
+      <div className="absolute top-[15%] left-1/2 transform -translate-x-1/2 flex flex-col gap-4 items-center m-auto">
         <Image
-          className=" m-auto  text-right"
+          className=" m-auto "
           src="/studio/tss.svg"
           width={80}
           height={100}
           alt=""
         />
-        <h2 className='text-4xl font-bold  text-center text-white'>The Subarna Studio</h2>
-        <p className='color-white60 text-xl  font-normal'>studio.subarnabhandari.com</p>
+        <h2 className="text-4xl font-bold  text-center text-white">
+          The Subarna Studio
+        </h2>
+        <p className="color-white60 text-xl  font-normal">
+          studio.subarnabhandari.com
+        </p>
       </div>
 
-
-      <div aria-label="Social media links" className="flex flex-col gap-5 w-min absolute bottom-8 left-8">
+      <div
+        aria-label="Social media links"
+        className="flex flex-col gap-5 w-min absolute bottom-8 left-8"
+      >
         <Link
           className="p-5 text-xl bg-white30  rounded-full  color-white100 hover-color-white100 hover-bg-primary"
           href="https://www.facebook.com/TheSubarnaStudio"
@@ -57,14 +63,11 @@ const Studiobanner = () => {
           <FaLinkedinIn aria-hidden="true" />
           <span className="sr-only">LinkedIn</span>
         </Link>
-
       </div>
-
 
       <Link
         className="p-5 text-xl bg-white30  rounded-full  color-white100 hover-color-white100 hover-bg-primary  absolute bottom-8 right-8"
         href="#aboutstudio"
-
         rel="noopener noreferrer"
         aria-label="Scroll"
         title="View Page"
@@ -72,12 +75,8 @@ const Studiobanner = () => {
         <FaArrowDown />
         <span className="sr-only">LinkedIn</span>
       </Link>
-
-
-
-
     </div>
-  )
+  );
 }
 
 export default Studiobanner
