@@ -6,10 +6,14 @@ import { FaAngleRight } from "react-icons/fa6";
 import Toolshead from "@/components/header/Toolshead";
 import Toolslider from "@/components/tools/Toolslider";
 import Toolsdate from "@/components/tools/Toolsdate";
+import Head from "next/head";
 
 const tools = () => {
   return (
     <main>
+      <Head>
+        <title>Tools by Subarna</title>
+      </Head>
       <div className="container m-auto">
         <div className="flex gap-5 py-5">
           <div className="tools-left-col w-full md:w-3/12 hidden md:flex gap-5 flex-col">

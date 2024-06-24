@@ -3,14 +3,18 @@ import Link from 'next/link'
 import React from 'react'
 import { FaHeart } from "react-icons/fa6";
 import { FaBehance } from "react-icons/fa";
+import Head from 'next/head';
 
 const page = () => {
   return (
     <main>
+      <Head>
+        <title>Portfolio. Subarna</title>
+      </Head>
       <div className="container m-auto flex flex-col gap-5">
         <div className="p-10 ">
-          <h2 className='text-2xl text-white pb-2'>Project I have Done</h2>
-          <p className='text-sm color-white70'>
+          <h2 className="text-2xl text-white pb-2">Project I have Done</h2>
+          <p className="text-sm color-white70">
             Throughout my professional journey, I've had the privilege of
             collaborating with both small, tight-knit teams and large, diverse
             groups, gaining invaluable insights and skills from hands-on
@@ -20,33 +24,42 @@ const page = () => {
 
         <div className="portfolio-title w-full px-5 py-4 flex mb-hide">
           <div className="container w-full flex item-center justify-between ">
-
-            <h4 className='text-lg font-bold items-center flex'>Projects</h4>
+            <h4 className="text-lg font-bold items-center flex">Projects</h4>
 
             <div className="appricate flex gap-3 ">
-
-              <h2 className='flex items-center text-sm'>Appricate &nbsp;<b><FaHeart /></b>&nbsp; it on</h2>
+              <h2 className="flex items-center text-sm">
+                Appricate &nbsp;
+                <b>
+                  <FaHeart />
+                </b>
+                &nbsp; it on
+              </h2>
               <Link
                 className="behance flex items-center gap-1 bg-gray-700 hover:bg-gray-800 px-3 py-2 rounded-md"
                 target="_blank"
                 href="https://www.behance.net/subarnabhd"
-              ><FaBehance />&nbsp;Behance</Link>
-
+              >
+                <FaBehance />
+                &nbsp;Behance
+              </Link>
             </div>
           </div>
         </div>
 
         <div className="line-10"></div>
 
-
-
         <div className="projectcard flex animate pop">
           <div className="col project-details">
             <Image
               className="project-logo"
               src="/portfolio/vhandar-logo.png"
-              height={60} width={60} alt=''></Image>
-            <p className="project-title">Digitizing Grocery Ordering Experience</p>
+              height={60}
+              width={60}
+              alt=""
+            ></Image>
+            <p className="project-title">
+              Digitizing Grocery Ordering Experience
+            </p>
             <div className="line-20"></div>
             <p className="project-name">Vhandar.com</p>
             <div className="project-sm-container">
@@ -63,10 +76,17 @@ const page = () => {
               className="project-button"
               target="_blank"
               href="http://www.vhandar.com/"
-            >Coming Soon...</Link>
+            >
+              Coming Soon...
+            </Link>
           </div>
           <div className="col project-image">
-            <Image src="/portfolio/vhandar.png" height={600} width={600} alt=''></Image>
+            <Image
+              src="/portfolio/vhandar.png"
+              height={600}
+              width={600}
+              alt=""
+            ></Image>
           </div>
         </div>
 
@@ -77,8 +97,13 @@ const page = () => {
             <Image
               className="project-logo"
               src="/portfolio/trackshield-logo.png"
-              height={60} width={60} alt=''></Image>
-            <p className="project-title">Telematic solutions designed to Global Car Tracking.</p>
+              height={60}
+              width={60}
+              alt=""
+            ></Image>
+            <p className="project-title">
+              Telematic solutions designed to Global Car Tracking.
+            </p>
             <div className="line-20"></div>
             <p className="project-name">Track Shield</p>
             <div className="project-sm-container">
@@ -95,10 +120,17 @@ const page = () => {
               className="project-button"
               target="_blank"
               href="https://trackshields.com/"
-            >View Project</Link>
+            >
+              View Project
+            </Link>
           </div>
           <div className="col project-image">
-            <Image src="/portfolio/trackshield.png" height={600} width={600} alt=''></Image>
+            <Image
+              src="/portfolio/trackshield.png"
+              height={600}
+              width={600}
+              alt=""
+            ></Image>
           </div>
         </div>
 
@@ -109,7 +141,10 @@ const page = () => {
             <Image
               className="project-logo"
               src="/portfolio/mybantu-logo.png"
-              height={60} width={60} alt=''></Image>
+              height={60}
+              width={60}
+              alt=""
+            ></Image>
             <p className="project-title">Upgrading Phone Calling Experience</p>
             <div className="line-20"></div>
             <p className="project-name">My Bantu</p>
@@ -123,22 +158,39 @@ const page = () => {
               solution. Simplify your communication, boost productivity, and
               stay connected like never before.
             </p>
-            <Link className="project-button" target="_blank" href="https://mybantu.in/"
-            >View Project</Link>
+            <Link
+              className="project-button"
+              target="_blank"
+              href="https://mybantu.in/"
+            >
+              View Project
+            </Link>
           </div>
           <div className="col project-image">
-            <Image src="/portfolio/mybantu.png" height={600} width={600} alt=''></Image>
+            <Image
+              src="/portfolio/mybantu.png"
+              height={600}
+              width={600}
+              alt=""
+            ></Image>
           </div>
         </div>
 
-
         <div className="line-80"></div>
-
 
         <div className="projectcard flex animate pop">
           <div className="col project-details">
-            <Image className="project-logo" src="/portfolio/lims-logo.png" height={60} width={60} alt=''></Image>
-            <p className="project-title">Modernizing Laboratory Information Management Through Digitalization</p>
+            <Image
+              className="project-logo"
+              src="/portfolio/lims-logo.png"
+              height={60}
+              width={60}
+              alt=""
+            ></Image>
+            <p className="project-title">
+              Modernizing Laboratory Information Management Through
+              Digitalization
+            </p>
             <div className="line-20"></div>
             <p className="project-name">
               Laboratory Information Management System - LIMS
@@ -152,62 +204,111 @@ const page = () => {
               Laboratory Information Management System at Department of Food
               Technology and Quality Control.
             </p>
-            <Link className="project-button" target="_blank" href="http://lims.dftqc.gov.np/">View Project</Link>
+            <Link
+              className="project-button"
+              target="_blank"
+              href="http://lims.dftqc.gov.np/"
+            >
+              View Project
+            </Link>
           </div>
           <div className="col project-image">
-            <Image src="/portfolio/lims.png" height={600} width={600} alt=''></Image>
+            <Image
+              src="/portfolio/lims.png"
+              height={600}
+              width={600}
+              alt=""
+            ></Image>
           </div>
         </div>
 
-
         <div className="line-80"></div>
-
 
         <div className="projectcard flex animate pop">
           <div className="col project-details">
-            <Image className="project-logo" src="/portfolio/sajha-logo.png" height={60} width={60} alt=''></Image>
-            <p className="project-title">Inovative application for managing Real Estate Management Services</p>
-            <div className="line-20"></div>
-            <p className="project-name">
-              Sajha Investment
+            <Image
+              className="project-logo"
+              src="/portfolio/sajha-logo.png"
+              height={60}
+              width={60}
+              alt=""
+            ></Image>
+            <p className="project-title">
+              Inovative application for managing Real Estate Management Services
             </p>
+            <div className="line-20"></div>
+            <p className="project-name">Sajha Investment</p>
             <div className="project-sm-container">
               <p className="project-position">UI/UX Designer</p>
               <p className="project-dot">•</p>
               <p className="project-timeline">Feb 2022 - Mar 2023</p>
             </div>
             <p className="project-description">
-              Platform that lets real estate manage the selling, buying and investment process end-to-end with ease, all from one location.
+              Platform that lets real estate manage the selling, buying and
+              investment process end-to-end with ease, all from one location.
             </p>
-            <Link className="project-button" target="_blank" href="#">View Project</Link>
+            <Link className="project-button" target="_blank" href="#">
+              View Project
+            </Link>
           </div>
           <div className="col project-image">
-            <Image src="/portfolio/sajha.png" height={600} width={600} alt=''></Image>
+            <Image
+              src="/portfolio/sajha.png"
+              height={600}
+              width={600}
+              alt=""
+            ></Image>
           </div>
         </div>
 
-
         <div className=" bg-[#001d26] rounded-2xl overflow-hidden my-10 flex justify-between">
-          <div className='p-10 w-max p-col-1'>
-            <h2 className='flex text-3xl font-bold items-baseline gap-1 pb-3'>Portfolio<b>.</b> <p className='text-xl font-light'>Subarna</p></h2>
-            <p className='color-white70'>Hire Subarna for the best design experience.</p>
-            <div className='flex pt-10 items-center gap-2'>
-              <Link className="py-2 px-4 rounded-full bg-slate-600 flex items-center hover:bg-black text-sm" href="/contact">Hire</Link>
-              <Link className="py-2 px-4 rounded-full  flex items-center hover:bg-black text-sm" href="/contact">Message</Link></div>
+          <div className="p-10 w-max p-col-1">
+            <h2 className="flex text-3xl font-bold items-baseline gap-1 pb-3">
+              Portfolio<b>.</b> <p className="text-xl font-light">Subarna</p>
+            </h2>
+            <p className="color-white70">
+              Hire Subarna for the best design experience.
+            </p>
+            <div className="flex pt-10 items-center gap-2">
+              <Link
+                className="py-2 px-4 rounded-full bg-slate-600 flex items-center hover:bg-black text-sm"
+                href="/contact"
+              >
+                Hire
+              </Link>
+              <Link
+                className="py-2 px-4 rounded-full  flex items-center hover:bg-black text-sm"
+                href="/contact"
+              >
+                Message
+              </Link>
+            </div>
           </div>
-          <div className='p-col-2 w-1/2'>
-            <div className='flex justify-end '>
-              <Image className='bg-[#001d26] rounded-2xl p-4' src="/home/icon.webp" height={75} width={75} alt=''></Image>
+          <div className="p-col-2 w-1/2">
+            <div className="flex justify-end ">
+              <Image
+                className="bg-[#001d26] rounded-2xl p-4"
+                src="/home/icon.webp"
+                height={75}
+                width={75}
+                alt=""
+              ></Image>
             </div>
           </div>
         </div>
 
         <div className="portfolio-end">
-          <Image className='m-auto' src="/portfolio/portfoliotext.png" height={1000} width={1000} alt=''></Image>
+          <Image
+            className="m-auto"
+            src="/portfolio/portfoliotext.png"
+            height={1000}
+            width={1000}
+            alt=""
+          ></Image>
         </div>
       </div>
     </main>
-  )
+  );
 }
 
 export default page

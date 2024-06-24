@@ -1,5 +1,6 @@
 import Contactform from "@/components/Contactform";
 import Contacttab from "@/components/Contacttab";
+import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import { FaRegPaperPlane } from "react-icons/fa";
@@ -13,6 +14,9 @@ const page = () => {
   };
   return (
     <main className="bg-white w-header">
+      <Head>
+        <title>Contact. Subarna</title>
+      </Head>
       <div className="h-[64px] sticky top-[64px]  minimal flex items-center">
         <div className="container m-auto   flex justify-between   py-2 items-center  w-full px-4">
           <div>

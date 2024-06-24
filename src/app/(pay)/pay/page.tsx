@@ -1,5 +1,6 @@
 "use client";
 
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -33,6 +34,9 @@ const Page = () => {
 
   return (
     <div className="container">
+      <Head>
+        <title>Pay. Subarna</title>
+      </Head>
       {isLoading && (
         <div className="preloader">
           <div className="loader">

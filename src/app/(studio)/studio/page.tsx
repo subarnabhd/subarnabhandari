@@ -1,12 +1,16 @@
 import ClientSlider from "@/components/home/ClientSlider";
 import Aboutstudio from "@/components/studio/Aboutstudio";
 import Studiobanner from "@/components/studio/Studiobanner";
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 
 const studio = () => {
   return (
     <main>
+      <Head>
+        <title>Studio. by Subarna</title>
+      </Head>
       <Studiobanner />
 
       <div

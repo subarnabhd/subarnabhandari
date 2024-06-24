@@ -9,7 +9,7 @@ const AboutPage = () => {
   return (
     <>
       <Head>
-        <title>About Subarna Bhandari | Web, Graphic, & UI/UX Designer</title>
+        <title>About. Subarna Bhandari</title>
         <meta name="description" content="Learn about Subarna Bhandari, a Web, Graphic, & UI/UX Designer based in Nepal. Discover his journey, projects, and contributions to the design industry." />
         <meta name="keywords" content="Subarna Bhandari, web designer, graphic designer, UI/UX designer, Nepal, brand identity, online presence" />
         <meta property="og:title" content="About Subarna Bhandari | Web, Graphic, & UI/UX Designer" />
