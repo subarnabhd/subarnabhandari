@@ -9,6 +9,8 @@ import Homebanner from '@/components/home/Homebanner'
 import Whychoose from '@/components/home/Whychoose'
 import ClientSlider from '@/components/home/ClientSlider'
 import GoodDesign from '@/components/home/GoodDesign'
+import Textslider from '@/components/home/Textslider'
+import Textslider2 from "@/components/home/Textslider2";
 
 const page = () => {
   return (
@@ -42,6 +44,10 @@ const page = () => {
         </div>
       </div>
       <Whychoose />
+      <div className="bg-black text-slider">
+        <Textslider />
+        <Textslider2/>
+      </div>
       <Boxgallery />
       <GoodDesign />
       <Hire />

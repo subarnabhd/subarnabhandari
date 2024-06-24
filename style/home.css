@@ -143,7 +143,7 @@
 
 
 
-.good-design{
+.good-design {
   background-image: url(/home/Dot-Pattern.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -227,4 +227,38 @@
 }
 
 /* Red Button End  */
+.text-slider{
+  padding: 100px 0;
+display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 
+.text-slider .swiper-slide {
+
+  width: max-content !important;
+  /* background-color: red!; */
+
+
+}
+
+.text-slider .swiper-slide p {
+  margin: 0;
+  padding: 10px;
+  /* background: #f0f0f0; */
+  border-radius: 4px;
+  white-space: nowrap;
+  align-items: center;
+  text-align: center !important;
+  width: fit-content !important;
+  /* background-color: green; */
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--white50);
+}
+.text-slider .swiper-slide:nth-child(even) p{
+  color: var(--white35);
+}
