@@ -3,9 +3,10 @@
 .good-design  img {
   max-height: 500px !important;
   max-width: 500px !important;
-  background-color: green;
+  background-color: #F5F5F7;
   border-radius: 12px;
   margin: 50px 0;
+  border: 1px solid #ececee;
 
 }
 

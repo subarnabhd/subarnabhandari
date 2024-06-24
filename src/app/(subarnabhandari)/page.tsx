@@ -9,7 +9,6 @@ import Homebanner from "@/components/home/Homebanner";
 import Whychoose from "@/components/home/Whychoose";
 import ClientSlider from "@/components/home/ClientSlider";
 import GoodDesign from "@/components/home/GoodDesign";
-import Designslide from "@/components/home/Designslide";
 import Textslider from "@/components/home/Textslider";
 import Textslider2 from "@/components/home/Textslider2";
 
@@ -50,8 +49,7 @@ const page = () => {
         <Textslider2 />
       </div>
       <Boxgallery />
-      {/* <GoodDesign /> */}
-      <Designslide />
+      <GoodDesign />
       <Hire />
 
       <div className="bg-white">
