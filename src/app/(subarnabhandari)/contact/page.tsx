@@ -13,8 +13,8 @@ const page = () => {
   };
   return (
     <main className="bg-white w-header">
-      <div className="container m-auto">
-        <div className=" flex justify-between border-b py-2 items-center">
+      <div className="h-[64px] sticky top-[64px]  minimal flex items-center">
+        <div className="container m-auto   flex justify-between   py-2 items-center  w-full px-4">
           <div>
             <h2 className="text-xl font-semibold text-black">
               Need to contact us?
@@ -40,8 +40,9 @@ const page = () => {
             </Link>
           </div>
         </div>
-
-        <div className="flex gap-20 min-h-[600px]">
+      </div>
+      <div className="container m-auto">
+        <div className="flex gap-20 min-h-[600px] px-4">
           <div className="w-1/2 py-10 flex flex-col gap-3">
             <h1 className="text-3xl text-black font-bold">
               Let's start a project together.
