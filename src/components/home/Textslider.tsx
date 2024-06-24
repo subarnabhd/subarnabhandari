@@ -18,7 +18,7 @@ export default function App() {
           freeMode={true}
           loop={true}
           autoplay={{
-            delay: 0,
+            delay: 500,
             pauseOnMouseEnter: false,
             disableOnInteraction: false,
             reverseDirection: true,

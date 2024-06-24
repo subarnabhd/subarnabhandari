@@ -257,8 +257,8 @@ display: flex;
   /* background-color: green; */
   font-size: 28px;
   font-weight: 500;
-  color: var(--white50);
+  color: var(--white40);
 }
 .text-slider .swiper-slide:nth-child(even) p{
-  color: var(--white35);
+  color: var(--white20);
 }
