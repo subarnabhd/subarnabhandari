@@ -5,9 +5,10 @@ import "/style/pay.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Subarna Bhandari",
-  description: "Designer",
+  title: "SubarnaPay",
+  description: "Here to pay - Quick and easy.",
 };
+
 
 export default function RootLayout({
   children,

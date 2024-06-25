@@ -34,9 +34,6 @@ const Page = () => {
 
   return (
     <div className="container m-auto">
-      <Head>
-        <title>Pay. Subarna</title>
-      </Head>
       {isLoading && (
         <div className="preloader">
           <div className="loader">
@@ -52,10 +49,10 @@ const Page = () => {
       )}
 
       {!isLoading && (
-        <div className="containbox">
-          <div className="card">
-            <div className="logo-box">
-              <Link href="/pay" className="logo">
+        <div className="containbox ">
+          <div className="card flex flex-col align-middle">
+            <div className="logo-box  m-auto ">
+              <Link href="/pay" className="logo m-auto w-max">
                 <Image
                   className="logoicon m-auto"
                   src="/pay/header.webp"

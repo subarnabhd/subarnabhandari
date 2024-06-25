@@ -13,6 +13,10 @@ const tools = () => {
     <main>
       <Head>
         <title>Tools by Subarna</title>
+        <meta
+          name="description"
+          content="Make your tasks easier with Tools by Subarna - Your go-to resource for simplifying tasks."
+        />
       </Head>
       <div className="container m-auto">
         <div className="flex gap-5 py-5">

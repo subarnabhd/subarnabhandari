@@ -3,7 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { MdOutlineFileDownload } from "react-icons/md";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "CV. Subarna",
+  description: "Subarna Bhandari CV",
+};
 const cv = () => {
     return (
       <main className="cv">

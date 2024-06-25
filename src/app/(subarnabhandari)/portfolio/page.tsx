@@ -4,7 +4,12 @@ import React from 'react'
 import { FaHeart } from "react-icons/fa6";
 import { FaBehance } from "react-icons/fa";
 import Head from 'next/head';
+import { Metadata } from "next";
 
+  export const metadata: Metadata = {
+    title: "Portfolio. Subarna",
+    description: "Subarna Bhandari Portfolio",
+  };
 const page = () => {
   return (
     <main>

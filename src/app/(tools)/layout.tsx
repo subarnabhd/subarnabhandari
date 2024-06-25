@@ -17,8 +17,9 @@ import Copywrite from "@/components/footer/Copywrite";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Subarna Bhandari",
-  description: "Designer",
+  title: "Tools. by Subarna",
+  description:
+    "Make your tasks easier with Tools. by Subarna - Your go-to resource for simplifying tasks.",
 };
 
 export default function RootLayout({
@@ -31,7 +32,6 @@ export default function RootLayout({
       <body className={inter.className}>
           <Toolshead/>
           {children}
-
           <Copywrite />
       </body>
     </html>

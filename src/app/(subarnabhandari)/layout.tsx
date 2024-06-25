@@ -6,10 +6,6 @@ import Copywrite from "@/components/footer/Copywrite";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Subarna Bhandari",
-  description: "Designer",
-};
 
 export default function RootLayout({
   children,

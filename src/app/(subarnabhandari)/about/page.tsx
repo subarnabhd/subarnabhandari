@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Head from "next/head";
+import { Metadata } from "next";
+
+  export const metadata: Metadata = {
+    title: "About. Subarna Bhandari",
+    description: "Designer",
+  };
 
 const AboutPage = () => {
   return (

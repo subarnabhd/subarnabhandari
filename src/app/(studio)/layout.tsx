@@ -7,8 +7,9 @@ import Studiofooter from "@/components/footer/Studiofooter";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Subarna Bhandari",
-  description: "Designer",
+  title: "Studio. by Subarna",
+  description: "The Subarna Studio - TSS",
+
 };
 
 export default function RootLayout({

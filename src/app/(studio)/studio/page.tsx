@@ -4,6 +4,13 @@ import Studiobanner from "@/components/studio/Studiobanner";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Studio. by Subarna",
+  description: "The Subarna Studio - TSS",
+};
+
 
 const studio = () => {
   return (
