@@ -9,11 +9,11 @@ import Image from "next/image";
 const GoodDesign: React.FC = () => {
   const slides = [
     { src: "/design/slider_1.gif", href: "#" },
-    { src: "/design/slider_2.gif", href: "#" },
     { src: "/design/slider_3.webp", href: "#" },
     { src: "/design/slider_4.webp", href: "#" },
     { src: "/design/p.vhandar.png", href: "#" },
     { src: "/design/slider_5.webp", href: "#" },
+    { src: "/design/slider_2.gif", href: "#" },
     { src: "/design/slider_6.webp", href: "#" },
     { src: "/design/slider_7.webp", href: "#" },
     { src: "/design/slider_8.webp", href: "#" },
@@ -44,7 +44,7 @@ const GoodDesign: React.FC = () => {
 
   return (
     <>
-      <div className="good-design bg-white py-28 w-header overflow-hidden">
+      <div className="good-design bg-white pt-28  w-header overflow-hidden">
         <Rating />
         <h2 className="site-h text-black">
           Striving to create elegant & effortless designs.
@@ -54,13 +54,13 @@ const GoodDesign: React.FC = () => {
           Subarna.
         </p>
         <Swiper
-          slidesPerView={5}
+          slidesPerView={6}
           cssMode={true}
           spaceBetween={50}
           freeMode={true}
           loop={true}
           autoplay={{
-            delay: 2500,
+            delay: 65,
             disableOnInteraction: false,
 
         }}
