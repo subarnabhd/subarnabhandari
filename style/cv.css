@@ -32,9 +32,7 @@ ul.timeline {
   
   /* ------Timeline---------- */
   
-  .cv-container{
-    border-bottom: 5px solid var(--primary-hover);
-  }
+
   .cv h4 {
     color: var(--white100) !important;
     font-weight: 300;
@@ -66,9 +64,17 @@ ul.timeline {
   
   }
   .cv {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
   }
+        .cv-container{
+          max-width: 900px;
+          margin: 40px 0;
+          padding: 50px;
+          border: 1px solid var(--white15);
+          background-color: var(--white10);
+          border-radius: 12px;
+        }
   .cv-name {
     font-size: 28px;
     color: var(--white100);
@@ -97,7 +103,7 @@ ul.timeline {
     border-radius: 20px;
     border: 1px solid var(--white15);
     padding: 30px;
-    margin: 10px 10px;
+    margin: 10px 30px;
     gap: 20px;
     display: flex;
     flex-direction: column;

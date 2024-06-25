@@ -6,20 +6,20 @@ import { MdOutlineFileDownload } from "react-icons/md";
 
 const cv = () => {
     return (
-      <main className="cv  py-5">
+      <main className="cv">
         <Head>
           <title>CV. Subarna</title>
         </Head>
-        <div className="cv-container px-4">
+        <div className="cv-container">
           <div className="">
-            <div className="flex justify-between items-center  m-auto py-5">
-              <div className="flex gap-5 items-center">
+            <div className="flex justify-between items-center  m-auto pb-10">
+              <div className="flex gap-8 items-center">
                 <Image
                   className="rounded-full"
                   src="/about/subarnabhandari.jpg"
                   alt="Subarna Bhandari"
-                  width="100"
-                  height="60"
+                  width="160"
+                  height="160"
                 ></Image>
 
                 <div className="flex flex-col gap-2">
@@ -45,7 +45,7 @@ const cv = () => {
             </div>
 
             <div>
-              <p className="text-sm color-white70">
+              <p className="text-base color-white70">
                 Experienced UI/UX Designer based in Kathmandu, Nepal, with 5
                 years of proven success in delivering user-friendly digital
                 solutions. Proficient in wire-framing, prototyping, and
