@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';import type { Metadata } from "next";
+// import Link from 'next/link';import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "/style/contact.css";
 import "/style/blog.css";
@@ -12,6 +12,7 @@ import "/style/portfolio.css";
 import "/style/cv.css";
 import "/style/header.css";
 import "/style/globals.css";
+import Link from 'next/link';
 
 const NotFoundPage = () => {
   const goBack = () => {

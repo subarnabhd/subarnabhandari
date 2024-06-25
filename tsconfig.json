@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/(subarnabhandari)/not-found.tsxari)/not-found.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/(subarnabhandari)/not-found.tsxari)/not-found.tsx", "src/app/(subarnabhandari)/not-found.js"],
   "exclude": ["node_modules"]
 }
