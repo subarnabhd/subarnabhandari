@@ -6,6 +6,12 @@ import React from "react";
 import { FaRegPaperPlane } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebookMessenger } from "react-icons/fa";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact. Subarna",
+  description: "Contact Subarna Bhandari",
+};
 
 const page = () => {
   const data = {
