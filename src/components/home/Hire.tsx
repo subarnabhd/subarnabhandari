@@ -20,7 +20,7 @@ const Hire = () => {
                    
                 </div>
                 <div className="w-6/12">
-                    <Image className="w-full" src="/home/subarnabhd-showcase.webp" alt="Subarna Bhandari"  width={3000} height={100}></Image>
+                    <Image className="w-full" src="/home/subarnabhd-showcase.webp" alt="Subarna Bhandari"  width={500} height={500}></Image>
                 </div>
             </div>
 
