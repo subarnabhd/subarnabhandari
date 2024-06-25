@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Head from 'next/head'
-import GoodDesign from '@/components/home/GoodDesign'
 
 
 const AboutPage = () => {
