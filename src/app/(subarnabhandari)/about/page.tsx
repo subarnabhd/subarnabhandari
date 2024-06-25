@@ -25,8 +25,8 @@ const AboutPage = () => {
           <Image
             className="m-auto w-full rounded-xl"
             src="/about/about-header.jpg"
-            width={2000}
-            height={100}
+            width={1300}
+            height={260}
             alt="About Subarna Bhandari"
           />
           <div className='flex flex-col gap-3'>
