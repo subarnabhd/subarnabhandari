@@ -67,7 +67,7 @@ const GoodDesign: React.FC = () => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        navigation={false}
         modules={[Autoplay]}
         className="mySwiper"
       >
