@@ -1,16 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "/style/slider.css";
-import "/style/contact.css";
-import "/style/blog.css";
-import "/style/home.css";
-import "/style/link.css";
-import "/style/portfolio.css";
-import "/style/cv.css";
-import "/style/header.css";
-import "/style/tools.css";
-import "/style/globals.css";
-import "/style/studio.css";
 import Header from "@/components/header/Header";
 import Copywrite from "@/components/footer/Copywrite";
 import Studiofooter from "@/components/footer/Studiofooter";
@@ -30,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-          <Header />
-          {children}
-          <Studiofooter/>
-          <Copywrite />
+        <Header />
+        {children}
+        <Studiofooter />
+        <Copywrite />
       </body>
     </html>
   );
