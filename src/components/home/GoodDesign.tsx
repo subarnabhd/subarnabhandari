@@ -54,7 +54,7 @@ const GoodDesign: React.FC = () => {
           Subarna.
         </p>
         <Swiper
-          slidesPerView={6}
+          slidesPerView={5}
           cssMode={true}
           spaceBetween={50}
           freeMode={true}
