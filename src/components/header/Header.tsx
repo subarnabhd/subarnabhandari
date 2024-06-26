@@ -6,18 +6,34 @@ import { RiCloseFill } from "react-icons/ri";
 
 const Header: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [rotation, setRotation] = useState(0);
 
   useEffect(() => {
-    const navigation = document.querySelector(".s-header") as HTMLElement | null;
-    const darkSections = document.querySelectorAll(".w-header") as NodeListOf<HTMLElement>;
+    const navigation = document.querySelector(
+      ".s-header"
+    ) as HTMLElement | null;
+    const logo = document.querySelector(".s-header-logo") as HTMLElement | null;
+    const darkSections = document.querySelectorAll(
+      ".w-header"
+    ) as NodeListOf<HTMLElement>;
 
-    if (!navigation) return;
+    if (!navigation || !logo) return;
 
     // Add the initial transparent class
-    navigation.classList.add('transparent');
+    navigation.classList.add("transparent");
+
+    const updateRotation = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      const maxScrollTop =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const rotationValue = (scrollTop / maxScrollTop) * 360;
+      setRotation(rotationValue);
+    };
 
     const headerDarkMode = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
       let isOverAnyDarkSection = false;
 
       darkSections.forEach((darkSection) => {
@@ -30,28 +46,35 @@ const Header: React.FC = () => {
       });
 
       if (scrollTop <= 45) {
-        navigation.classList.add('transparent');
-        navigation.classList.remove('minimal');
+        navigation.classList.add("transparent");
+        navigation.classList.remove("minimal");
       } else if (isOverAnyDarkSection) {
-        navigation.classList.add('minimal');
+        navigation.classList.add("minimal");
       } else {
-        navigation.classList.remove('transparent');
-        navigation.classList.remove('minimal');
+        navigation.classList.remove("transparent");
+        navigation.classList.remove("minimal");
       }
+
+      updateRotation();
     };
 
     const handleScroll = () => {
-      if (navigation) {
-        headerDarkMode();
-      }
+      headerDarkMode();
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    const logo = document.querySelector(".s-header-logo") as HTMLElement | null;
+    if (logo) {
+      logo.style.transform = `rotate(${rotation}deg)`;
+    }
+  }, [rotation]);
 
   const handleMenuClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();

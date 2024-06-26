@@ -290,3 +290,7 @@
   margin-right: 0px;
 }
 /* ---------Menu end ------- */
+
+.s-header-logo {
+  transition: transform 0.1s linear;
+}
