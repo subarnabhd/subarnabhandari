@@ -46,12 +46,9 @@ const GoodDesign: React.FC = () => {
     <>
       <div className="good-design bg-white pt-28  w-header overflow-hidden">
         <Rating />
-        <h2 className="site-h text-black">
-          Striving to create elegant & effortless designs.
-        </h2>
+        <h2 className="site-h text-black">Good design is good business.</h2>
         <p className="text-lg color-black55">
-          Unlimited possibility to reach out. Create your own brand with
-          Subarna.
+          “You can do anything you set your mind to.”
         </p>
         <Swiper
           slidesPerView={5}
@@ -62,15 +59,14 @@ const GoodDesign: React.FC = () => {
           autoplay={{
             delay: 65,
             disableOnInteraction: false,
-
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={false}
-        modules={[Autoplay]}
-        className="mySwiper"
-      >
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={false}
+          modules={[Autoplay]}
+          className="mySwiper"
+        >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
               <Link href={slide.href}>

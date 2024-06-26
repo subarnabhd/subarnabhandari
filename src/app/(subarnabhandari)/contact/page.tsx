@@ -10,7 +10,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact. Subarna",
-  description: "Contact Subarna Bhandari",
+  description: "Contact Subarna Bhandarisuba",
 };
 
 const page = () => {

@@ -4,7 +4,7 @@ import React from 'react'
 
 const Whychoose = () => {
     return (
-      <div className="bg-black pt-20">
+      <div className="bg-black pt-40">
         <div className="container m-auto  block md:flex gap-5 px-4">
           <div className="flex flex-col gap-5 justify-center  text-left">
             <h1 className="text-4xl font-bold">Why to Choose ?</h1>
